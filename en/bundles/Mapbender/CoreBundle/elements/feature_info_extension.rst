@@ -19,8 +19,8 @@ Configuration
 
 Needed for the configuration of the extension is the feature info element. More on this topic can be found at http://doc.mapbender3.org/en/bundles/Mapbender/CoreBundle/elements/feature_info.html
 
-* **Load of declarative sources:**
-* **Highlighting of featureinfo hints:** 
+* **Load of declarative sources:** to load the declarative sources.
+* **Highlighting of featureinfo hints:** highlight the featureinfo hint of the requested area.
 * **Title:** Title of the element in the layout list.
 * **Map:** Id of Map element to query.
 * **Featureinfo:** feature info element, which is the subject of the extension.
@@ -33,13 +33,13 @@ YAML-Definition:
 
 
    tooltip: 'Feature Info Extension'  # text to use as tooltip.
-   map: ~	                          # Id of Map element.
-   featureinfo: ~	                  # Id of featureinfo.
+   map: ~							# Id of Map element.
+   featureinfo: ~					# Id of featureinfo.
    highlight_source: true             # highlight the requested area/ featureinfo hints, default: true 
    load_declarative_wms: true         # to load the declarative sources, default: true 
 
 
-You need a feature info-element to show this extension. See :doc:`feature_info` for inherited configuration options. 
+You need a feature info-element to show this extension. See the feature_info documentation for inherited configuration options. 
 
 Class, Widget & Style
 ============================

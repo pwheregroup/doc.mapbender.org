@@ -19,7 +19,7 @@ Konfiguration
 
 Für die Konfiguration der Erweiterung ist das FeatureInfo-Element die Vorraussetzung. Mehr zu diesem Thema finden Sie unter http://doc.mapbender3.org/de/bundles/Mapbender/CoreBundle/elements/feature_info.html
 
-* **Laden von delarativen Quellen:** 
+* **Laden von delarativen Quellen:** Ermöglicht das Laden von delarativen Quellen.
 * **Hervorheben von FeatureInfo Treffern:** Farbliches Hervorheben der Treffer auf dem Kartenausschnitt bei einer Informationsabfrage.
 * **Title:** Titel des Elements. Dieser wird in der Layouts Liste angezeigt und ermöglicht, mehrere Elemente voneinander zu unterscheiden.
 * **Map:** ID des Kartenelements, auf das sich das Element bezieht.
@@ -31,13 +31,13 @@ YAML-Definition:
 
 .. code-block:: yaml
 
-   tooltip: 'Feature Info Extension'  # Text des Tooltips
-   map: ~	                          # ID des Kartenelements
-   featureinfo: ~ 	                  # ID des FeatureInfo-Elements
+   tooltip: 'Feature Info Extension'  # Text des Tooltips.
+   map: ~							 # ID des Kartenelements.
+   featureinfo: ~					 # ID des FeatureInfo-Elements.
    highlight_source: true             # aktiviert die farblich Hervorhebung der Treffer. Standardwert ist true. 
    load_declarative_wms: true         # Laden von deklarativen Quellen. Standardwert ist true.
 
-Für das Element wird das FeatureInfo-Element benötigt. Zu der Konfiguration der Infoabfrage besuchen sie die Dokumentationsseite unter :doc:`feature_info`.
+Für das Element wird das FeatureInfo-Element benötigt. Zu der Konfiguration der Infoabfrage besuchen sie die Dokumentationsseite unter Feature Info.
 
 
 Class, Widget & Style
