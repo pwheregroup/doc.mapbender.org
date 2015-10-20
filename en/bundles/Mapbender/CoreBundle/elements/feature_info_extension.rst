@@ -33,10 +33,10 @@ YAML-Definition:
 
 
    tooltip: 'Feature Info Extension'  # text to use as tooltip.
-   map: '74'                          # Id of Map element to query.
-   featureinfo: '86'                  # Id of featureinfo element to query.
-   highlight_source: true             # true, to highlight the requested area/ featureinfo hints.
-   load_declarative_wms: true         # true, to load the declarative sources.
+   map: ~	                          # Id of Map element.
+   featureinfo: ~	                  # Id of featureinfo.
+   highlight_source: true             # highlight the requested area/ featureinfo hints, default: true 
+   load_declarative_wms: true         # to load the declarative sources, default: true 
 
 
 You need a feature info-element to show this extension. See :doc:`feature_info` for inherited configuration options. 

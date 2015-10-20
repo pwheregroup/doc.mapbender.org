@@ -32,10 +32,10 @@ YAML-Definition:
 .. code-block:: yaml
 
    tooltip: 'Feature Info Extension'  # Text des Tooltips
-   map: '74'                          # ID des Kartenelements
-   featureinfo: '86'                  # ID des FeatureInfo-Elements
-   highlight_source: true             # true, wenn die Treffer farblich hervorgehoben werden sollen.
-   load_declarative_wms: true         # true, wenn die deklarativen Quellen geladen werden sollen
+   map: ~	                          # ID des Kartenelements
+   featureinfo: ~ 	                  # ID des FeatureInfo-Elements
+   highlight_source: true             # aktiviert die farblich Hervorhebung der Treffer. Standardwert ist true. 
+   load_declarative_wms: true         # Laden von deklarativen Quellen. Standardwert ist true.
 
 Für das Element wird das FeatureInfo-Element benötigt. Zu der Konfiguration der Infoabfrage besuchen sie die Dokumentationsseite unter :doc:`feature_info`.
 
