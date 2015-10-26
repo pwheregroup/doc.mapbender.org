@@ -33,8 +33,8 @@ YAML-Definition:
 
 
    tooltip: 'Feature Info Extension'  # text to use as tooltip.
-   map: ~							# Id of Map element.
-   featureinfo: ~					# Id of featureinfo.
+   map: ~                             # Id of Map element.
+   featureinfo: ~                     # Id of featureinfo.
    highlight_source: true             # highlight the requested area/ featureinfo hints, default: true 
    load_declarative_wms: true         # to load the declarative sources, default: true 
 
