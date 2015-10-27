@@ -19,7 +19,7 @@ Configuration
 
 Needed for the configuration of the extension is the feature info element. More on this topic can be found at http://doc.mapbender3.org/en/bundles/Mapbender/CoreBundle/elements/feature_info.html
 
-* **Load of declarative sources:** to load the declarative sources.
+* **Load of declarative sources:**  allow to load service from a link (for example from featureInfo or search) and define the layers to activated, default false. 
 * **Highlighting of featureinfo hints:** highlight the featureinfo hint of the requested area.
 * **Title:** Title of the element in the layout list.
 * **Map:** Id of Map element to query.
@@ -36,10 +36,60 @@ YAML-Definition:
    map: ~                             # Id of Map element.
    featureinfo: ~                     # Id of featureinfo.
    highlight_source: true             # highlight the requested area/ featureinfo hints, default: true 
-   load_declarative_wms: true         # to load the declarative sources, default: true 
-
+   load_declarative_wms: true         # allow to load service from a link (for example from featureInfo or search) 
+                                      # and define the layers to activated, default false 
 
 You need a feature info-element to show this extension. See the feature_info documentation for inherited configuration options. 
+
+
+How to highlight the geometry
+==============================
+
+You can highlight the featureinfo hint of the requested area. Set **highlight_source** true in mapbender.yml. 
+
+The link has to look like this:
+
+.. code-block:: html
+
+  <div data-geom='MULTIPOLYGON(( [shpxy xf=" " yh=","] ))'>
+  <table class="geometryElement" data-geometry="MULTIPOLYGON(...)
+
+
+.. code-block:: yaml
+
+   highlight_source: true         # highlight the requested area/ featureinfo hints, default: true 
+
+
+
+How to add a WMS by defining a link
+====================================
+
+You can add a WMS to Mapbender by defining a link f.e. in your WMS featureinfo or your search results.
+
+Set **useDeclarative** true im mapbender.yml or check declarative in administration.
+
+The link has to look like this:
+
+.. code-block:: html
+
+  <a mb-action="source.add.wms" mb-layer-merge="1" mb-wms-merge="1" 
+  mb-wms-layers="Gewaesser,Fluesse" 
+  href="http://wms.wheregroup.com/cgi-bin/germany.xml?VERSION=1.1.1&REQUEST=GetCapabilities&SERVICE=WMS">load service</a>
+
+  <a mb-action="source.add.wms" mb-layer-merge="1" mb-wms-merge="1" 
+  mb-wms-layers="Gewaesser,Fluesse" 
+  mb-url="http://wms.wheregroup.com/cgi-bin/germany.xml?VERSION=1.1.1&REQUEST=GetCapabilities&SERVICE=WMS" href="">load service</a>
+
+
+.. code-block:: yaml
+
+    mb-action="source.add.wms"    # defines action to add a  WMS
+    mb-wms-merge="1"              # adds the WMS only once, if WMS is already part of the application it will use the WMS which is there (default is 1)
+    mb-layer-merge="1"            # default is 1 which means: activate the layers passed mb-wms-layers and do not disable the layers which are already active.
+    mb-wms-layers="Gewaesser,Fluesse" # defines the layers to be activated, _all activates all layers, default all layers are deactivated
+    href oder mb-url              # refer to the WMS getcapabilities URL
+
+   
 
 Class, Widget & Style
 ============================
