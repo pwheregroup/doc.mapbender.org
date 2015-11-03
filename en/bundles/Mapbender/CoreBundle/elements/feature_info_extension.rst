@@ -3,10 +3,16 @@
 Feature Info Extension
 ***********************
 
-This element provides an extension for the feature info capabilities to Mapbender3. It works for WMS services.
-The extension allows color highlighting a requested area by moving the mouse to the previously defined area.
+This element provides an extension for the featureInfo. At the moment two special behaviours can be handled:
 
-Starting the info query via a mouse click on the map to open the dialog box. The requested area is now highlighted in yellow on the map. The area is highlighted in dark blue with a dark border when the cursor is on the defined area.
+* allow highlight of the geometies of the result of the featureInfo
+* allow add WMS Services from featureInfo 
+
+
+You can allow highlight of the geometies of the result of the featureinfo. You can define two colors - color for the hits, color for the object with focus. This functionality is supported for points, lines and areas. The highlighted objects are printed. Please note that you have to modify your featureinfo-template. Read more about this at **How to highlight the geometry**.
+
+You can allow add WMS Services by adding a link to your FeatureInfo. Please note that you have to modify your featureinfo-template. read more about this at **How to add a WMS by defining a link**.
+
 
 .. image:: ../../../../../figures/feature_info_extension.png
      :scale: 80
@@ -17,7 +23,7 @@ Configuration
 .. image:: ../../../../../figures/feature_info_extension_configuration.png
      :scale: 80
 
-Needed for the configuration of the extension is the feature info element. More on this topic can be found at http://doc.mapbender3.org/en/bundles/Mapbender/CoreBundle/elements/feature_info.html
+You need the feature info element to refer to.
 
 * **Load of declarative sources:**  allow to load service from a link (for example from featureInfo or search) and define the layers to activated, default false. 
 * **Highlighting of featureinfo hints:** highlight the featureinfo hint of the requested area.
@@ -39,26 +45,19 @@ YAML-Definition:
    load_declarative_wms: true         # allow to load service from a link (for example from featureInfo or search) 
                                       # and define the layers to activated, default false 
 
-You need a feature info-element to show this extension. See the feature_info documentation for inherited configuration options. 
+You need a feature info-element to use this extension. 
 
 
 How to highlight the geometry
 ==============================
 
-You can highlight the featureinfo hint of the requested area. Set **highlight_source** true in mapbender.yml. 
-
-The link has to look like this:
+To use this functionality you have to extend your FeatureInfo-Template. It needs a **class="geometryElement"**, data-srid="EPSG:4326" with the information about the projection of the data and **data-geometry** with the WKT presentation of the geometry:
 
 .. code-block:: html
 
-  <div data-geom='MULTIPOLYGON(( [shpxy xf=" " yh=","] ))'>
-  <table class="geometryElement" data-geometry="MULTIPOLYGON(...)
+  <table class="geometryElement" data-srid="EPSG:4326" data-geometry="MULTIPOLYGON(...)" >...</table>
 
-
-.. code-block:: yaml
-
-   highlight_source: true         # highlight the requested area/ featureinfo hints, default: true 
-
+If you use PostgreSQL as datasource in your WMS Service, you can use the PostGIS function st_asText(geom) to generate the WKT.
 
 
 How to add a WMS by defining a link
@@ -109,7 +108,6 @@ JavaScript API
 activate
 --------
 
-Activates the widget which then waits for mouse click on the map and starts the feature info extension.
 
 deactivate
 ----------

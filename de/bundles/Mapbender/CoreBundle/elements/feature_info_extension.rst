@@ -3,10 +3,18 @@
 Feature Info Erweiterung 
 ***********************
 
-Dieses Element stellt eine Erweiterung für die Infoabfrage bereit, die mit WMS Services funktioniert.
-Die Erweiterung ermöglicht eine farbliche Hervorhebung einer abgefragten Geometrie durch das Bewegen des Mauszeigers auf die vorher definierte Fläche. 
+Dieses Element stellt eine Erweiterung des Elements FeatureInfo. Es stellt derzeit zwei spezielle Verhalten für die Infoabfrage bereit:
 
-Durch das Starten der Infoabfrage über einen Mausklick auf der Karte öffnet sich das Dialogfenster und die abgefragte Fläche wird auf der Karte gelb markiert. Wenn nun der Mauszeiger auf die markierte Fläche kommt, so färbt sich diese dunkelblau und wird hervorgehoben. 
+* erlaube das Hervorheben von Ergebnissen der Info-Abfrage
+* erlaube das Hinzuladen von WMS Diensten über die Infoabfrage
+
+
+Die Erweiterung ermöglicht ein farbliches Hervorheben von Treffern der Info-Abfrage. Hierbei können zwei Farben definiert werden - Farbe für die Treffer, Farbe für den Treffer mit Fokus. 
+
+Diese Funktionalität wird für Punkte, Linien und Fläche unterstützt. Die hervorgehobenen Objekte können in den Druck übergeben werden. Bitte beachten Sie, dass Sie das featureInfo-Template erweitern müssen, um die Funktonalität nutzen zu können. Informationen dazu finden Sie weiter unten unter **Hervorheben von Geometrien**.
+
+Sie können das Hinzuladen von WMS Diensten über einen Link unterstützen. Bitte beachten Sie, dass Sie dazu das featureInfo-Template erweitern müssen. Informationen dazu finden Sie weiter unten unter **Hinzufügen eines WMS über einen definierten Link**.
+
 
 .. image:: ../../../../../figures/de/feature_info_extension.png
      :scale: 80
@@ -43,19 +51,15 @@ Für das Element wird das FeatureInfo-Element benötigt. Zu der Konfiguration de
 Hervorheben von Geometrien
 ===========================
 
-Sie können die Treffer auf dem Kartenausschnitt farblich hervorheben. Beim Mouse-Over auf ein Ergebnis wird die ausgewählte Geometrie in einer anderen Farben hervorgehoben. Setzen Sie **highlight_source** auf true in der mapbender.yml. 
-
-Der Link sollte folgendermaßen aussehen:
+Um diese Funktionalität nutzen zu können, müssen Sie ihr FeatureInfo-Template erweitern. Es bnötigt die Klasse **class="geometryElement"**, **data-srid="EPSG:4326"** mit der Angabe zur Projektion der Daten sowie **data-geometry** mit der WKT Präsentation der Geometrie:
 
 .. code-block:: html
 
-  <div data-geom='MULTIPOLYGON(( [shpxy xf=" " yh=","] ))'>
-  <table class="geometryElement" data-geometry="MULTIPOLYGON(...)
+  <table class="geometryElement" data-srid="EPSG:4326" data-geometry="MULTIPOLYGON(...)" >...</table>
+
+If you use PostgreSQL as datasource in your WMS Service, you can use the PostGIS function st_asText(geom) to generate the WKT.
 
 
-.. code-block:: yaml
-
-   highlight_source: true         # aktiviert die farblich Hervorhebung der Treffer. Standardwert ist true.  
 
 
 
@@ -108,7 +112,6 @@ JavaScript API
 activate
 --------
 
-Aktiviert das Modul, welches dann auf einen Mausklick wartet, um die Infoabfrage zu öffnen und die Erweiterung zu starten.
 
 deactivate
 ----------
