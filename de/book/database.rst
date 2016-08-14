@@ -1,8 +1,8 @@
 Konfiguration der Datenbank
-############################
+[333333333333333333333333333]
 
 Allgemein
-*********
+[44444444]
 
 Zur Konfiguration der Datenbankverbindung werden die Dateien config.yml und parameters.yml verwendet (siehe auch `die Symfony Dokumentation <http://symfony.com/doc/current/best_practices/configuration.html>`_). Während in der config.yml nur die Platzhalter angegeben werden, werden die Werte in der parameters.yml gefüllt.
 
@@ -12,14 +12,14 @@ Beispiele zur Einrichtung finden sich in den `Installationsanleitungen <installa
 .. _doctrine:
 
 Doctrine
-*************
+[444444444444]
 
 Mapbender3 verwendet Doctrine. Doctrine ist eine Sammlung von PHP Bibliotheken und bietet einen objektrelationalen Mapper und eine Datenbankabstraktionsschicht. 
 Auf der `Doctrine Projektseite <http://www.doctrine-project.org/>`_ finden sich weitere Informationen.
 
 
 Datenbank Definition
-********************
+[4444444444444444444]
 
 Die Standarddatenbankdefinition erfolgt in der config.yml und sieht folgendermaßen aus:
 
@@ -71,7 +71,7 @@ Der Parameter "default_connection" gibt die Datenbankverbindung an, die standard
 
 
 Verwendung mehrerer Datenbanken
-~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+[5555555555555555555555555555555]
 
 Mit Mapbender3 können Sie auch mehrere Datenbanken verwenden. Dies wird empfohlen, wenn Sie Ihre eigenen Daten von den Mapbender3-Daten trennen möchten. Das kann nützlich sein, wenn Sie eigenen Code verwenden, der nicht zu einem Mapbender3-Bundle gehört. EIne zweite Datenbank benötigen Sie ebenfalls für die Geodatensuche (über den SearchRouter) und die Datenerfassung (Digitizer). Die Geodaten sollten grundsätzlich in einer anderen DAtenbank vorgehalten werden und nicht in der Mapbender3 Datenbank.
 

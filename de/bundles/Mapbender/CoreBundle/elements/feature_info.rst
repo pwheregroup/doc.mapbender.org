@@ -1,7 +1,7 @@
 .. _feature_info:
 
 Feature Info (Information)
-**************************
+[5555555555555555555555555]
 
 Dieses Element stellt die Infoabfrage bereit, die mit WMS Services funktioniert.
 
@@ -9,7 +9,7 @@ Dieses Element stellt die Infoabfrage bereit, die mit WMS Services funktioniert.
      :scale: 80
 
 Konfiguration
-=============
+[666666666666]
 
 .. image:: ../../../../../figures/de/feature_info_configuration.png
      :scale: 80
@@ -35,7 +35,7 @@ Konfiguration
 
 
 Anzeige als Original und gestyled
----------------------------------
+[77777777777777777777777777777777]
 
 Mit der Option "Original zeigen" wird die Original-Darstellung des FeatureInfo Responses genutzt. Ist die Option deaktiviert, wird versucht eine einheitliche Darstellung in Mapbender zu erreichen.
 
@@ -52,7 +52,7 @@ Beispiel gestyled:
 
 
 Anzeige als Tabs und Accordion
-------------------------------
+[77777777777777777777777777777]
 
 Mit dem Schalter "Type" können die Responses mehrerer Dienste in unterschiedlichen Tabs oder als Accordion angezeigt werden.
 
@@ -69,7 +69,7 @@ Beispiel Accordion:
 
 
 Button-Konfiguration
---------------------
+[7777777777777777777]
 
 Für das Element wird ein Button verwendet. Siehe das Kapitel :doc:`button` für die generelle Konfiguration. Der folgende Screenshot zeigt ein Beispiel für einen FeatureInfo Button, der so lange aktiviert ist, bis er vom Benutzer wieder deaktiviert wird. Eine weitere Möglichkeit, ihn zu deaktivieren wäre den FeatureInfo Dialog zu schließen, wenn dieser die Option die Option "Deactivate on Close" angeschaltet hat.
 
@@ -82,7 +82,7 @@ Für das Element wird ein Button verwendet. Siehe das Kapitel :doc:`button` für
 
 
 YAML-Definition:
-----------------
+[777777777777777]
 
 .. code-block:: yaml
 
@@ -102,30 +102,30 @@ YAML-Definition:
 
 
 Class, Widget & Style
-=====================
+[66666666666666666666]
 
 * **Class:** Mapbender\\CoreBundle\\Element\\FeatureInfo
 * **Widget:** mapbender.element.featureInfo.js
 * **Style:** mapbender.elements.css
 
 HTTP Callbacks
-==============
+[6666666666666]
 
 Keine.
 
 JavaScript API
-==============
+[6666666666666]
 
 activate
---------
+[7777777]
 
 Aktiviert das Modul, welches dann auf einen Mausklick wartet, um die Infoabfrage zu öffnen.
 
 deactivate
-----------
+[777777777]
 Deaktiviert das Modul.
 
 JavaScript Signals
-==================
+[66666666666666666]
 
 Keine.

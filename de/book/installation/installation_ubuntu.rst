@@ -1,7 +1,7 @@
 .. _installation_ubuntu:
 
 Installation auf Ubuntu und Debian
-##################################
+[444444444444444444444444444444444]
 
 Die folgende Installationsanleitung beschreibt die notwendigen Schritte auf einem aktuellen Ubuntu- oder Debian-System. Wir nehmen an, dass Apache 2.4 auf dem System läuft. Eine `Dokumentation zu Apache 2.2 <installation_ubuntu.html#einrichtung-fur-apache-2-2>`_ findet sich am Ende des Dokuments. Als Datenbank-Umgebung wird PostgreSQL verwendet.
 
@@ -54,7 +54,7 @@ Laden Sie den Apache Server neu.
 
 
 Überprüfung
------------
+[5555555555]
  
 
 Prüfen Sie, ob der Alias erreichbar ist:
@@ -71,7 +71,7 @@ Prüfen Sie, ob der Alias erreichbar ist:
 
 
 Mapbender3 Einrichtung
------------------------
+[5555555555555555555555]
 
 Setzen Sie die Schreibrechte für Besitzer (u), Gruppe (g) und Andere (o). Weisen Sie die Skripte dem Apache User (www-data) zu.
 
@@ -135,7 +135,7 @@ Wenn Sie mehr über Mapbender3 erfahren möchten, schauen Sie sich das `Mapbende
 
 
 Einrichtung für Apache 2.2
---------------------------
+[5555555555555555555555555]
 
 Einige Debian Versionen unterstützen für Apache 2.2 die Ablage der mapbender3.conf Datei im Verzeichnis ``/etc/apache2/sites-available`` und die Aktivierung über den Befehl ``a2ensite``. Je nach Betriebssystem muss die Datei aber im Verzeichnis ``/etc/apache2/conf.d/`` abgelegt werden.
 

@@ -1,7 +1,7 @@
 .. _simplesearch:
 
 SimpleSearch
-************
+[55555555555]
 
 SimpleSearch bietet eine Einfeldsuche oder Schlagwortsuche. Die Suchanfrage erfolgt dabei an einen Suchdienst z.B. Solr. Es wird ein Eingabefeld angeboten, welches direkt in die Toolbar oder in der Seitenleiste (Sidepane) eingebunden werden kann. SimpleSearch sendet den eingegebenen Suchbegriff an eine konfigurierbare URL und empfängt JSON-formatierte Daten, welche eine Beschriftung und Geometrieattribute für jeden Eintrag beinhalten.
 
@@ -12,7 +12,7 @@ Die Geometriedaten können in WKT oder in GeoJSON-Format codiert werden.
 
 
 Konfiguration
-=============
+[666666666666]
 
 .. image:: ../../../../../figures/de/simplesearch_configuration_a.png
      :scale: 80
@@ -45,7 +45,7 @@ Konfiguration
 
 
 YAML-Definition
-----------------
+[777777777777777]
 
 .. code-block:: yaml
 
@@ -69,10 +69,10 @@ YAML-Definition
    
 
 So richten Sie Solr ein:
-========================
+[66666666666666666666666]
 
 Installation
-------------
+[77777777777]
 
 Laden Sie Apache Solr herunter und entpacken Sie es in einen beliebigen Ordner. Nach dem erfolgreichen Entpacken der Datei kann Solr durch den Aufruf von solr/bin/install_solr_service.sh als Service in einem Linux-System installiert werden.
 
@@ -93,7 +93,7 @@ Apache Solr läuft auf Java 7 oder höher, Java 8 ist kompatibel und kann einige
 
 
 Start und Stopp
----------------
+[77777777777777]
 
 Sie können durch die folgende Befehle Solr über das Terminal starten und stoppen:
 
@@ -114,7 +114,7 @@ Sie können durch die folgende Befehle Solr über das Terminal starten und stopp
 * http://localhost:8983/solr
 
 Solr-Core
----------
+[77777777]
 
 Der Solr-Home Ordner ist der Bereich, in dem sich die verschiedenen Solr-Kerne für die Suche befinden. Die Minimalkonfiguration wird in folgender Datei vorgenommen:
 
@@ -132,7 +132,7 @@ Die solr.xml identifiziert das Verzeichniss als Solr-Ordner mit den Cores. Hier 
 
 
 Eigener Solr-Core
-------------------
+[77777777777777777]
 
 Für die Anlage eigener Kerne erstellen Sie einen Ordner unter /data/solr_data und kopieren Sie die *solr.yml* aus dem Verzeichnis /data/solr-5.4.1/server/solr in dieses Verzeichnis (/data/solr_data/solr.yml). Dann erstellen Sie einen neuen Ordner für ihren Kerne. Im Folgenden wurde der Core *places* unter /data/solr_data/places genutzt. 
 
@@ -215,7 +215,7 @@ Nun können Sie Solr mit den eigenen Kernen neustarten. Nutzen Sie dazu den obig
 
 
 Solr example
-------------
+[77777777777]
 
 Das Verzeichnis /solr-5.4.1/example enthält Beispiele für Solr. Jedes Beispiel ist in einem seperaten Verzeichnis abgelegt. Um ein bestimmtes Beispiel auszuführen, geben Sie den folgenden Befehl im Terminal ein:
 
@@ -246,7 +246,7 @@ Das Standardverzeichnis für die Cores ist /data/solr-5.4.1/server/solr; dieses 
 
 
 Indexing Solr XML
------------------
+[7777777777777777]
 
 Nutzen Sie die Beispieldaten unter /solr-5.4.1./example/exampledocs/*.xml oder eigene Daten, um die Solr XML-Dateien zu indizieren.
 
@@ -259,7 +259,7 @@ Für die Indexierung haben Sie zwei Möglichkeiten:
 
 
 DataImportHandler
---------------------
+[7777777777777777777]
 
 Importiere Datensätze aus einer **PostgreSQL-Datenbank**, über den Data Import Handler.
 
@@ -303,7 +303,7 @@ Für die Anpassung der Datenverbindung in den Konfigurationsdateien unter /data/
 
 
 UpdateHandler
---------------
+[7777777777777]
 
 Der UpdateHandler muss in der solrconfig.xml unter /data/solr_data/places/config angepasst werden. Anschließend können Sie mit dem folgenden Befehl Dokumente an Solr schicken. 
 
@@ -315,7 +315,7 @@ Beispiel csv:
 
 
 Solr-Schema
------------
+[7777777777]
 
 Ein Solr-Schema besteht aus den folgenden Teilen:
 
@@ -326,7 +326,7 @@ Ein Solr-Schema besteht aus den folgenden Teilen:
 
 
 Jetty absichern
----------------
+[77777777777777]
 
 Um den Apache Solr nach Außen abzusichern, müssen Sie Jetty konfigurieren. 
 
@@ -340,22 +340,22 @@ Um den Apache Solr nach Außen abzusichern, müssen Sie Jetty konfigurieren.
 
 
 Class, Widget & Style
-=========================
+[666666666666666666666666]
 
 * **Class:** Mapbender\\CoreBundle\\Element\\SimpleSearch
 * **Widget:** mapbender.element.simplesearch.js
 
 HTTP Callbacks
-==============
+[6666666666666]
 
 - /search: Proxy-Element, welches die konfigurierbare URL abfragt. Im Entwicklungsmodus wird die endgültige Abfrage-URL zum einfachen Debugging als ein x-mapbender-simplesearch-url Header zurückgegeben.
 
 JavaScript API
-==============
+[6666666666666]
 
 Keine.
 
 JavaScript Signals
-==================
+[66666666666666666]
 
 Keine.

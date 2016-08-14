@@ -1,7 +1,7 @@
 .. _layerset:
 
 Layerset
-========
+[5555555]
 
 Ein Layerset ist ein logischer Container, die einen oder mehrere Layerset-Instanzen (WMS Dienste) beinhalten kann. Ein typisches Beispiel sind die Unterscheidung in den Layerset "main" für die Hauptkarte und "overview" für die Übersichtskarte. Sie können weitere Layersets definieren, die optional in der Karte dargestellt werden oder auch im Layertree als eigener Ordner erscheinen (thematische Layer).
 
@@ -16,7 +16,7 @@ Layerset-Instances enthalten die Optionen, wie ein WMS angesprochen werden kann:
 
 
 Weitere Informationen
----------------------
+[66666666666666666666]
 
 * Information zur Benutzung von Layersets finden Sie in der `Quickstart Dokumentation <../../../../book/quickstart.html#konfiguration-von-diensten>`_
 

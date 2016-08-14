@@ -1,7 +1,7 @@
 .. _templates:
 
 Wie werden eigene Vorlagen (templates) erzeugt?
-###############################################
+[3333333333333333333333333333333333333333333333]
 
 Mapbender3 beinhaltet bereits erzeugte Anwendungs-Vorlagen. Häufig sollen eigene Vorlage mit Ihrem eigenen Corporate Design verwendet werden. Die bereits vorhandenen Vorlagen befinden sich zu Demonstrationszwecken im Mapbender CoreBundle (application/mapbender/src/Mapbender/CoreBundle). Für eigene Vorlagen sollten Sie ein eigenes Bundle verwenden, um Probleme bei einem Upgrade zu vermeiden.
 
@@ -9,7 +9,7 @@ Ab der Version 3.0.4.0 kann der Stil einer Anwendung über den css-Editor angepa
 
 
 Wie werden eigene Vorlagen (Templates) erzeugt?
-~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+[4444444444444444444444444444444444444444444444]
 
 Folgende vier Schritte sind nötig:
 
@@ -25,7 +25,7 @@ Notice: Es wurde ein Workshop/DemoBundle vorbereitet, das als Template verwendet
 * Download des Workshop/DemoBundle unter: https://github.com/mapbender/mapbender-workshop 
 
 Erzeugen eines eigenen Bundles
-~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+[444444444444444444444444444444]
 
 Anwender-Bundles werden im src-Verzeichnis abgelegt. 
 
@@ -51,7 +51,7 @@ Die Struktur kann wie folgt aussehen:
 
 
 Erzeugen eines neuen Namespaces 
-*******************************
+[555555555555555555555555555555]
 
 Die Datei WorkshopDemoBundle.php erzeugt den Namespace für das Bundle und referenziert auf das Template und zu den eigenen css-Datei(en).
 
@@ -95,7 +95,7 @@ Die Datei WorkshopDemoBundle.php erzeugt den Namespace für das Bundle und refer
 
 
 Anlegen der eigenen Template-Datei 
-**********************************
+[555555555555555555555555555555555]
 
 In unserem Beispiel heißt die Template-Datei FullscreenDemo.php. Sie befindet sich unter src/Workshop/DemoBundle/Template/FullscreenDemo.php.
 
@@ -147,7 +147,7 @@ In der Template-Datei wir der Name des Templates, die Regionen die angelegt werd
 
 
 Eigene twig-Datei erzeugen
-~~~~~~~~~~~~~~~~~~~~~~~~~~
+[4444444444444444444444444]
 
 Die twig-Dateien sind im folgenden Verzeichnis gespeichert:
 
@@ -164,7 +164,7 @@ Verwenden Sie mapbender/src/Mapbender/CoreBundle/Resources/views/Template/fullsc
 
 
 Eigene css-Datei erzeugen
-~~~~~~~~~~~~~~~~~~~~~~~~~
+[444444444444444444444444]
 
 Erzeugen Sie eine leere css-Datei und geben Sie in dieser nur die css-Definitionen an. 
 Ab der Mapbender3 Version 3.0.3.0 muss lediglich das css definiert werden, das vom Standard der Elemente abweicht.
@@ -248,7 +248,7 @@ Wenn Sie die css-Datei weiter bearbeiten müssen Sie die unter web/assets generi
 
 
 Registrieren Sie Ihre Vorlage
-~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+[4444444444444444444444444444]
 
 Um Ihre Vorlage zu registrieren, müssen Sie eine Datei erzeugen unter: 
 
@@ -302,7 +302,7 @@ Fügen Sie die neue css-Datei in der Funktion listAssets als letzten Eintrag ein
 
 
 Verwenden der neuen Vorlage in der mapbender.yml
-~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+[44444444444444444444444444444444444444444444444]
 
 Jetzt kann die Vorlage in der mapbender.yml, in der die Anwendung konfiguriert wird, verwendet werden. 
 
@@ -317,7 +317,7 @@ Sie finden die mapbender.yml unter:
 
 
 Verwenden der neuen Vorlage in der Mapbender Administration
-~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+[4444444444444444444444444444444444444444444444444444444444]
 
 Wenn Sie eine neue Anwendung mit der Mapbender3-Administration erzeugen, können Sie eine Vorlage (Template) auswählen.
 
@@ -380,7 +380,7 @@ Für das *WorkshopDemoBundle* wird statt des Eintrags *Mapbender\CoreBundle\Temp
 
 
 Wie kann das Design verändert werden?
-~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+[444444444444444444444444444444444444]
 
 Die folgenden Dateien müssen bearbeitet werden:
 
@@ -389,7 +389,7 @@ Die folgenden Dateien müssen bearbeitet werden:
 
 
 Wie kann das Logo verändert werden?
-~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+[4444444444444444444444444444444444]
 
 Das Logo (Standard ist das Mapbender3 Logo) kann in der Datei parameters.yml angepasst werden. Diese Änderung wirkt sich global auf die gesamte Mapbender3 Installation aus.
 
@@ -406,7 +406,7 @@ Das Logo kann auch in der twig-Datei angepasst werden:
 
 
 Wie kann der Anwendungstitel und das favicon angepasst werden?
-~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+[4444444444444444444444444444444444444444444444444444444444444]
 
 Der Anwendungstitel und das favicon kann auch in der twig-Datei angepasst werden:
 
@@ -420,7 +420,7 @@ Der Anwendungstitel und das favicon kann auch in der twig-Datei angepasst werden
 
 
 Wie können Buttons geändert werden?
-~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+[4444444444444444444444444444444444]
 
 Mapbender3 verwendet Schrift-Icons auf der FontAwesome Collection:
 
@@ -450,7 +450,7 @@ Wenn Sie ein Bild nutzen möchten, legen Sie dieses am Besten in Ihrem Bundle ab
 
 
 Probieren Sie es aus
-~~~~~~~~~~~~~~~~~~~~
+[4444444444444444444]
 
 * Laden Sie das Workshop/DemoBundle herunter: https://github.com/mapbender/mapbender-workshop 
 * Verändern Sie die Farbe oder ein Icon.

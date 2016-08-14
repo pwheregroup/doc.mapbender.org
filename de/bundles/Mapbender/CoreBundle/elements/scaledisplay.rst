@@ -1,7 +1,7 @@
 .. _scaledisplay:
 
 ScaleDisplay (Maßstabsanzeige)
-********************************
+[5555555555555555555555555555555]
 
 Die Maßstabsanzeige zeigt den aktuellen Maßstab an (1:1K or 1: 1000).
 
@@ -10,7 +10,7 @@ Die Maßstabsanzeige zeigt den aktuellen Maßstab an (1:1K or 1: 1000).
 
 
 Konfiguration
-=============
+[666666666666]
 
 .. image:: ../../../../../figures/de/scaledisplay_configuration.png
      :scale: 80
@@ -36,23 +36,23 @@ YAML-Definition:
      'right-bottom'
 
 Class, Widget & Style
-============================
+[666666666666666666666666666]
 
 * **Class:** Mapbender\\CoreBundle\\Element\\ScaleDisplay
 * **Widget:** mapbender.element.scaledisplay.js
 * **Style:** mapbender.element.scaledisplay.css
 
 HTTP Callbacks
-==============
+[6666666666666]
 
 Keine.
 
 JavaScript API
-==============
+[6666666666666]
 
 Keine.
 
 JavaScript Signals
-==================
+[66666666666666666]
 
 Keine.

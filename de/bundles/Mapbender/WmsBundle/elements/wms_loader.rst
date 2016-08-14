@@ -1,7 +1,7 @@
 .. _wms_loader:
 
 WMS Loader
-***********************
+[5555555555555555555555]
 
 Mit diesem Element können WMS per getCapabilities-Request geladen werden.
 Es kann WMS 1.1.1 und  WMS 1.3.0 geladen werden.
@@ -12,7 +12,7 @@ Es kann WMS 1.1.1 und  WMS 1.3.0 geladen werden.
 
 
 Konfiguration
-=============
+[666666666666]
 
 .. image:: ../../../../../figures/wms_loader_configuration.png
      :scale: 80
@@ -43,7 +43,7 @@ YAML-Definition:
 Für das Element wird ein Button verwendet. Siehe unter :ref:`button` für die Konfiguration.
 
 Hinzufügen eines WMS über einen definierten Link
-========================================================================
+[66666666666666666666666666666666666666666666666666666666666666666666666]
 
 Mapbender kann ein WMS über einen definierten Link hinzugefügt werden, z.B. zum Beispiel über die Informationsabfrage oder über Suchergebnisse.
 
@@ -74,29 +74,29 @@ Der Link sollte folgendermaßen aussehen:
    
 
 Class, Widget & Style
-=======================
+[6666666666666666666666]
 
 * **Class:** Mapbender\\WmsBundle\\Element\\WmsLoader
 * **Widget:** 
 * **Style:** 
 
 HTTP Callbacks
-==============
+[6666666666666]
 
 Keine.
 
 
 JavaScript API
-==============
+[6666666666666]
 
 activate
-----------
+[777777777]
 
 Öffnet einen Dialog, in dem ein WMS über einen getCapabilities-Request geladen werden kann.
 Es kann WMS 1.1.1 und  WMS 1.3.0 geladen werden.
 
 
 JavaScript Signals
-==================
+[66666666666666666]
 
 Keine.

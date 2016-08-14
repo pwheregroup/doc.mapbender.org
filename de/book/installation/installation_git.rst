@@ -1,7 +1,7 @@
 .. _installation_git:
 
 Git-basierte Installation
-##########################
+[4444444444444444444444444]
 
 
 Wenn Sie sich an der Mapbender3-Entwicklung beteiligen möchten oder aus anderen Gründen die Git Repositories für Mapbender3 verwenden, folgen Sie dieser Anleitung statt des normalen Downloads. Diese Anleitung basiert auf Ubuntu 12.04.  Für andere Distributionen benötigen Sie vielleicht spezielle Pakete wie z.B. sphinx-common.
@@ -18,7 +18,7 @@ Für die Git-basierte Installation benötigen Sie:
 
 
 Klonen des Repositories
-*************************
+[555555555555555555555555]
 
 Klonen ist einfach, geben Sie das folgende Kommando auf Ihrer Shell ein:
 
@@ -31,7 +31,7 @@ Entwickler, die Zugriff auf den Code haben möchten, müssen die SSH-URL verwend
 
 
 Zu einem Tag eines Mapbender3 Releases wechseln
-***********************************************
+[5555555555555555555555555555555555555555555555]
 
 Um mit einer Release Version von Mapbender3 zu arbeiten, wechseln Sie bitte zu dem spezifischen Tag. Zum Beispiel für Version 3.0.5.0: 
 
@@ -42,7 +42,7 @@ Um mit einer Release Version von Mapbender3 zu arbeiten, wechseln Sie bitte zu d
 
 
 Submodule abrufen
-*****************
+[5555555555555555]
 
 Die Starter-Applikation enthält nicht die Mapbender3 bundles, diese sind in einem eigenen Repository gespeichert und werden als Submodule in das Starter-Repository eingefügt. Rufen Sie das folgende Kommando im root-Verzeichnis ihres geklonten Repositories auf.
 
@@ -64,7 +64,7 @@ Das build-System benutzt cURL, um einige Remote-Komponenten abzurufen. Dazu müs
 
 
 Build-Management mit Phing
-****************************
+[555555555555555555555555555]
 
 
 Das Build-Management wird mit Phing vorgenommen, welches die Pear-Bibliothek benötigt. Zunächst muss Pear installiert werden.  Hier wird ein Debian-basiertes System verwendet:
@@ -96,7 +96,7 @@ Dann wird Phing installiert:
 
 
 Composer und PHPUnit
-====================
+[6666666666666666666]
 
 PHPUnit wird über den Composer mitgeliefert. Die Build-Skripte  benötigen weitere Abhängigkeiten, um Unit-Tests durchzuführen, die Dokumentation zu generieren und die Installationspakete zu erstellen.
 
@@ -134,7 +134,7 @@ Laden Sie anschließend die Laufzeit-Umgebungen wie Symfony und Doctrine:
 
 
 Die nächsten Schritte der Installation
-**************************************
+[5555555555555555555555555555555555555]
 
 Folgen Sie nun den Schritten, die unter `Installation <installation_ubuntu.html>`_ beschrieben werden:
 
@@ -151,7 +151,7 @@ Folgen Sie nun den Schritten, die unter `Installation <installation_ubuntu.html>
 
 
 Referenzieren Sie auf der Verzeichnis web über einen Symbolischen Link
-**********************************************************************
+[555555555555555555555555555555555555555555555555555555555555555555555]
 
 Als Entwickler werden Sie es bevorzugen, über einen Symbolischen Link auf das Verzeichnis web zu verweisen statt die DAteien zu kopieren. 
 Dies vereinfacht das Editieren von Assets innerhalb der Bundle-Verzeichnisse.
@@ -183,7 +183,7 @@ Bitte beachten Sie, dass Sie die Option :command:`FollowSymLinks` in der Apache 
 
 
 Lernen Sie mehr über app/console
-********************************
+[5555555555555555555555555555555]
 Die Symfony Console Komponenten ermöglichen es, kommandozeilen basierte Befehle zu erzeugen. Doctrine verfügt beispielsweise über einige kommandozeilen basierte Befehle, die Sie verwenden können.
 
 Lesen Sie mehr in der Symfony Dokumentation über `Console Commands <http://symfony.com/doc/current/components/console/usage.html>`_.
@@ -204,12 +204,12 @@ Lernen Sie wie Sie eigene Elemente über *app/console mapbender:generate:element
         
 ..
  Package Build Tools
- ===================
+[6666666666666666666]
 
  TODO: Skipped for now, KMQ has the knowledge.
 
 Aktualisierung der Installation
-===============================
+[666666666666666666666666666666]
 Da die Entwicklungen voranschreiten, wollen Sie ihren Code aktuell halten. 
 
 Folgende Schritte müssen durchgeführt werden:
@@ -232,7 +232,7 @@ Folgende Schritte müssen durchgeführt werden:
 .. _installation_sphinx:
 
 Sphinx
-======
+[66666]
 
 Sphinx wird für die Dokumentation benötigt, die Sie gerade lesen. In Debian-basierten Systemen wird Sphinx folgendermaßen installiert.
 
@@ -253,7 +253,7 @@ Entwickler mit Schreibrechten müssen die SSH-URL verwenden: git@github.com:mapb
 Lesen Sie mehr über `How to write Mapbender3 Documentation? <../../../en/book/development/documentation_howto.html>`_.
 
 ApiGen
-======
+[66666]
 
 `ApiGen <http://apigen.org>`_ ist der API-Dokumentations-Generator erster Wahl. Es wird auch mit Pear installiert: 
 
@@ -266,7 +266,7 @@ ApiGen
 Lesen Sie mehr in `How to write Mapbender3 Documentation? <../../../en/book/development/documentation_howto.html>`_.
 
 Troubleshooting
-***************
+[55555555555555]
 
 * Die ApiGen-Bestandteile laufen nur mit neueren Versionen von Phing (>= 2.4.12). Testen Sie die Phing Version mit: 
 

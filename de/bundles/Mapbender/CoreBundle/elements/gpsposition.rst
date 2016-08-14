@@ -1,7 +1,7 @@
 .. _gpspostion:
 
 GPS-Position
-************
+[55555555555]
 
 Dieses Elememt stellt einen Button bereit, der zu ihrer aktuellen Position navigiert und zeigt ein Symbol an dieser Position an. Der Maßstab wird dabei nicht verändert, außer durch Aktivierung der Einstellung ``zoom to accuracy (zoom to accuracy on first position)``.
 
@@ -15,7 +15,7 @@ Kompatibilität: Internet Explorer und MS Edge geben ohne GPS-Gerät am Rechner 
      :scale: 80
 
 Konfiguration
-=============
+[666666666666]
 
 .. image:: ../../../../../figures/de/gps_position_configuration.png
      :scale: 80
@@ -56,24 +56,24 @@ Das Element wird als Button in die Toolbar eingefügt.
 
 
 Class, Widget & Style
-======================
+[666666666666666666666]
 
 * **Class:** Mapbender\\CoreBundle\\Element\\GpsPosition
 * **Widget:** mapbender.element.gpsPostion.js
 * **Style:** mapbender.element.gpsPosition.css
 
 HTTP Callbacks
-==============
+[6666666666666]
 
 Keine.
 
 
 JavaScript API
-==============
+[6666666666666]
 
 Keine.
 
 JavaScript Signals
-==================
+[66666666666666666]
 
 Keine.

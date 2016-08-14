@@ -1,7 +1,7 @@
 .. _search_router:
 
 Search Router
-***********************
+[5555555555555555555555]
 
 Dieses Element erzeugt ein Suchformular mit Trefferausgabe. Das Formular und die Trefferausgabe sind dabei konfigurierbar. Zur Zeit wird eine generische SQL Suche unterstützt, weitere Entwicklungen werden folgen (z.B. WFS, Solr). 
 
@@ -9,7 +9,7 @@ Dieses Element erzeugt ein Suchformular mit Trefferausgabe. Das Formular und die
      :scale: 80
 
 Konfiguration
-=============
+[666666666666]
 
 .. image:: ../../../../../figures/de/search_router_configuration.png
      :scale: 80
@@ -63,7 +63,7 @@ Beispiel einer Such-Konfiguration im Textfeld ``Configuration``:
 
 
 YAML-Definition 
-----------------
+[777777777777777]
 
 In der mapbender.yml Datei:
 
@@ -134,7 +134,7 @@ In der mapbender.yml Datei:
 Für das Element wird ein Button oder die Sidepane verwendet. Zu der Konfiguration des Buttons besuchen Sie die Dokumentationsseite unter :doc:`button`.
 
 Vergleichsmodus
---------------------------
+[7777777777777777777777777]
 
 Für jedes Feld kann ein Vergleichsmodus bestimmt werden, welcher von der Engine verwendet werden soll, wenn die Suchanfrage gestellt wird. Die SQL Suche Engine hat die folgenden Modi:
 
@@ -148,7 +148,7 @@ Für jedes Feld kann ein Vergleichsmodus bestimmt werden, welcher von der Engine
 * **ilike-right:** rechtsseitiges 'like', bei dem Groß- / Kleinschreibung nicht unterschieden wird (case-insensitive - searchstring*)
 
 Styling der Ergebnisse
----------------------------
+[77777777777777777777777777]
 
 Standardmäßig werden die Ergebnisse in der Karte in dem default-OpenLayers Style angezeigt, d.h. orange für die Treffer und blau für selektierte Objekte.
 Sie können diese Farbgebung überschreiben, indem Sie eine styleMap-Konfiguration übergeben, die wie folgt aussehen könnte:
@@ -198,7 +198,7 @@ Das folgende Beispiel erzeigt grüne (ungefüllte) Objekte und stellt das selekt
 
 
 Beispiele
-==================
+[66666666666666666]
 
 Beispiel mit Autovervollständigung und individueller Ergebnisanzeige:
 
@@ -318,7 +318,7 @@ Beispiel mit Auswahlbox:
 
 
 Class, Widget & Style
-=====================
+[66666666666666666666]
 
 * **Class:** Mapbender\\CoreBundle\\Element\\SearchRouter
 * **Widget:** mapbender.element.searchRouter.js, mapbender.element.searchRouter.Feature.js, mapbender.element.searchRouter.Search.js
@@ -326,32 +326,32 @@ Class, Widget & Style
 
 
 HTTP Callbacks
-==============
+[6666666666666]
 
 <route_id>/autocomplete
------------------------
+[7777777777777777777777]
 
 Automatisch vervollständigter Ajax Endpunkt für die vorgegebene Suchroute. Die Autovervollständigung  wird unter Verwendung von Backbone.js eingesetzt. Das Autovervollständigung-Modul ist implementiert in mapbender.element.searchRouter.Search.js.
 
 <route_id>/search
------------------
+[7777777777777777]
 
 Automatisch vervollständigter Ajax Endpunkt für die vorgegebene Suchroute. Die Suche  wird unter Verwendung von Backbone.js eingesetzt. Das Such-Modul ist implementiert in mapbender.element.searchRouter.Search.js.
 
 
 JavaScript API
-==============
+[6666666666666]
 
 open
 ----
 Wenn das Modul als Dialog konfiguriert wird: open.
 
 close
------
+[7777]
 Wenn das Modul als Dialog konfiguriert wird: close.
 
 JavaScript Signals
-==================
+[66666666666666666]
 
 Keine.
 

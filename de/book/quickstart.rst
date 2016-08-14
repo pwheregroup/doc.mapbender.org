@@ -26,9 +26,9 @@
   :align: right
 
 
-########################
+[33333333333333333333333]
 Mapbender3 Quickstart 
-########################
+[33333333333333333333333]
 
 Mapbender ist ein web-basiertes Geoportal Framework zum Veröffentlichen, Registrieren, Anzeigen, Navigieren und Überwachen von Diensten, mit der Möglichkeit Dienste gesichert anzubieten.
 
@@ -64,13 +64,13 @@ Eine Mapbender Anwendung kann wie folgt aussehen:
 
 
 Installation
-===============
+[44444444444444]
 
 Hinweise zur Installation von Mapbender3 finden Sie unter http://doc.mapbender3.org/en/book/installation.html.
 
 
 Starten Sie Mapbender
-================================================================================
+[4444444444444444444444444444444444444444444444444444444444444444444444444444444]
 
 #. Wählen Sie ``Mapbender`` aus dem Startmenü oder besuchen Sie http://localhost/mapbender3/app.php
 
@@ -84,7 +84,7 @@ Falls Sie Schwierigkeiten haben, Mapbender zu starten, überprüfen Sie ob der A
 
 
 Starten Sie Mapbender im Entwicklungsmodus über app_dev.php
-==============================================================
+[4444444444444444444444444444444444444444444444444444444444444]
 Symfony bietet einen Entwicklungsmodus mit einer Reihe von Informationen über die Anwendung an (Logging, Fehlermeldungen, Datenbankabfragen, Speicherverbrauch, Zeit und mehr). Dieser Modus ist nur über localhost verfügbar.
 
   .. image:: ../../figures/mapbender3_app_dev.png
@@ -97,7 +97,7 @@ Symfony bietet einen Entwicklungsmodus mit einer Reihe von Informationen über d
 
 
 Die Willkommensseite
-================================================================================
+[4444444444444444444444444444444444444444444444444444444444444444444444444444444]
 
 #. Die Willkommensseite listet die öffentlichen Anwendungen auf, die von allen Benutzern aufgerufen werden können. Die Anwendungen werden mit Vorschaubild, Titel und Beschreibung aufgelistet.
 
@@ -116,7 +116,7 @@ Nach erfolgreicher Anmeldung werden Sie zur ``Mapbender Administration`` weiter 
 
 
 Anwendungsübersicht
-================================================================================
+[4444444444444444444444444444444444444444444444444444444444444444444444444444444]
 Nach der Anmeldung werden Sie zur Anwendungsübersicht (``Anwendungen/ Applications``) mit einer Liste der für Sie freigegebenen Anwendungen weiter geleitet.
 
 Die Anwendungsübersicht bietet folgende Funktionen:
@@ -136,7 +136,7 @@ Die Anwendungsübersicht bietet folgende Funktionen:
 
 
 Erstellen Sie eine eigene Anwendung
-================================================================================
+[4444444444444444444444444444444444444444444444444444444444444444444444444444444]
 
 Erstellen Sie eine neue Anwendung, indem Sie einen Titel, eine Beschreibung sowie einen URL-Titel eingeben. Anschließend können Sie die Anwendung bearbeiten und Elemente, Themen, Stil (CSS-Editor) und Sicherheitseinstellungen zu verwalten.
 
@@ -166,19 +166,19 @@ Ihre Anwendung wurde erstellt. Jetzt brauchen Sie Elemente (z.B. Kartenelement, 
 
 
 Kopieren und Umbenennen einer Anwendung
-================================================================================
+[4444444444444444444444444444444444444444444444444444444444444444444444444444444]
 Sie können eine neue Anwendung auch durch Kopieren einer vorhandenen erzeugen. Jede Anwendung, auf die Sie schreibend zugreifen können, verfügt über den Button Anwendung duplizieren |mapbender3-button-copy|. Beim Kopieren wird die Anwendung mitsamt der Dienste kopiert. Die kopierte Anwendung erhält einen abgeleiteten Namen, den Sie im nächsten Schritt anpassen können.
 
 
 
 Löschen einer Anwendung
-================================================================================
+[4444444444444444444444444444444444444444444444444444444444444444444444444444444]
 Sie können eine Anwendung aus der Liste ``Anwendungen`` über den |mapbender3-button-delete|-Button löschen. Es wird lediglich die Anwendung gelöscht. Die Dienste sind weiterhin im Dienste-Repository vorhanden.
 
 
 
 Exportieren und Importieren von Anwendungen und Daten
-================================================================================
+[4444444444444444444444444444444444444444444444444444444444444444444444444444444]
 Sie können eine Anwendung als  JSON oder YAML über ``Anwendungen --> Exportieren (Applications --> Export)``exportieren. Für den Export können ein oder mehrere Anwendungen ausgewählt werden. Die Datenquellen können ebenfalls beim Export ausgegeben werden.
 
   .. image:: ../../figures/mapbender3_application_export.png
@@ -193,12 +193,12 @@ Die Export-Datei beinhaltet alle Definitionen, die zum Aufbau der Anwendung (Dat
 
 
 Verwaltung von Datenquellen
-=================================
+[44444444444444444444444444444444]
 Mapbender soll verschiedene Dienste wie OGC WMS, OGC WMTS oder OGC WFS verwalten. Jeder Service muss dabei anders verwaltet werden. In der Administration ist dabei für jede Quelle eine eigene Administrationsmöglichkeit (im Moment lediglich WMS) vorgesehen.
 
 
 Service Repository (Datenquellen)
-====================================
+[44444444444444444444444444444444444]
 
 #. Gehen Sie auf ``Datenquelle (Services)`` und schauen sich die Dienstquellen an.
 
@@ -212,7 +212,7 @@ Service Repository (Datenquellen)
 
 
 Laden von Web Map Services
-================================================================================
+[4444444444444444444444444444444444444444444444444444444444444444444444444444444]
 Sie können OGC Web Map Services (WMS) in Ihre Anwendung laden. Mapbender3 unterstützt dabei die Versionen 1.1.1 und 1.3.0.
 
 Ein WMS liefert ein XML, wenn das getCapabilities-Dokument angefordert wird. Diese Information wird von Mapbender ausgelesen. Der Client erhält alle notwendigen Informationen über den Dienst aus diesem XML.
@@ -252,7 +252,7 @@ http://osm.omniscale.net/proxy/service?
 
 
 Fügen Sie Dienste zur Anwendung hinzu
-===========================================
+[444444444444444444444444444444444444444444]
 Nach dem erfolgreichen Hochladen eines WMS möchten Sie diesen zu einer Anwendung hinzufügen.
 
 #. Wählen Sie  ``Anwendungen -->`` |mapbender3-button-edit| ``Editier-Button --> Layerset``.
@@ -270,7 +270,7 @@ Nach dem erfolgreichen Hochladen eines WMS möchten Sie diesen zu einer Anwendun
      :scale: 80
 
 Konfiguration von Diensten
-================================================================================
+[4444444444444444444444444444444444444444444444444444444444444444444444444444444]
 Sie können Dienste für Ihre Anwendung konfigurieren. Vielleicht möchten Sie nicht alle Ebenen anzeigen oder Sie möchten die Reihenfolge oder den Titel der Ebenen ändern, die Info-Abfrage für einzelne Ebenen verhindern oder den Minimal-/Maximalmaßstab ändern.
 
 #. Wählen Sie  ``Anwendung -->`` |mapbender3-button-edit| ``Editier-Button --> Layerset --> Editier-Button``, um eine Instanz zu konfigurieren.
@@ -346,7 +346,7 @@ $groups$.
 
 
 Fügen Sie Elemente zu Ihrer Anwendung hinzu
-=================================================
+[444444444444444444444444444444444444444444444444]
 Mapbender bietet eine Reihe von Elementen (Modulen) an, aus denen Sie Ihre Anwendung aufbauen können. Ihre Anwendung verfügt wiederum über verschiedene Bereiche (Toolbar, Sidepane, Content, Footer), die Sie mit Elementen bestücken können.
 
   .. image:: ../../figures/mapbender3_application_add_element.png
@@ -404,7 +404,7 @@ Sie finden detaillierte Informationen zu jedem Element unter `MapbenderCoreBundl
 
 
 Versuchen Sie es selber
-================================================================================
+[4444444444444444444444444444444444444444444444444444444444444444444444444444444]
 
 * Fügen Sie ein Kartenelement (Map-Element) zum content-Bereich Ihrer Anwendung hinzu.
 * Fügen Sie ein Ebenenbaum (Layertree) zum content-Bereich Ihrer Anwendung hinzu.
@@ -416,7 +416,7 @@ Versuchen Sie es selber
 
 
 Benutzer- und Gruppenverwaltung
-=================================
+[44444444444444444444444444444444]
 Der Zugriff auf eine Mapbender Anwendung benötigt Authentifizierung. Nur öffentliche Anwendungen können von allen Anwendern genutzt werden.
 
 Ein Benutzer kann die Berechtigungen bekommen, um auf eine oder mehrere Anwendungen und Dienste zuzugreifen.
@@ -426,7 +426,7 @@ Ein Benutzer kann die Berechtigungen bekommen, um auf eine oder mehrere Anwendun
 
 
 Benutzer anlegen
-================================================================================
+[4444444444444444444444444444444444444444444444444444444444444444444444444444444]
 
 #. Um einen Benutzer anzulegen, gehen Sie zu ``Benutzerverwaltung --> Benutzer --> Neuer Benutzer (User control --> User --> New User)`` oder wählen Sie den ``Button`` |mapbender3-button-add|.
 
@@ -445,7 +445,7 @@ Benutzer anlegen
 
 
 Gruppen anlegen
-================================================================================
+[4444444444444444444444444444444444444444444444444444444444444444444444444444444]
 #. Erzeugen Sie eine Gruppe über  ``Gruppen --> Neue Gruppen (Group --> New Group)``. 
 
 #. Wählen Sie einen Namen und eine Beschreibung für Ihre Gruppe.
@@ -454,7 +454,7 @@ Gruppen anlegen
 
 
 Benutzer einer Gruppe zuweisen
-================================================================================
+[4444444444444444444444444444444444444444444444444444444444444444444444444444444]
 
 #. Weisen Sie einen Benutzer einer Gruppe über `` Benutzer --> Gruppen (Users --> Groups)`` zu. 
 
@@ -468,7 +468,7 @@ Benutzer einer Gruppe zuweisen
  
 
 Rechte
-========
+[4444444]
 Mapbender3 bietet verschiedene Rechte an, die Sie vergeben können. Diese beruhen auf dem Symfony ACL System http://symfony.com/doc/2.1/cookbook/security/acl_advanced.html#built-in-permission-map
 
 * view - anzeigen
@@ -486,7 +486,7 @@ Weisen Sie einem Benutzer über ``Benutzer --> Benutzer bearbeiten --> Sicherhei
 
 
 Zuweisen einer Anwendung zu einem Benutzer/einer Gruppe
-============================================================
+[44444444444444444444444444444444444444444444444444444444444]
 #. Bearbeiten Sie Ihre Anwendung über ``Anwendungen --> Editier-Button`` |mapbender3-button-edit| 
 
 #. Wählen Sie ``Sicherheit (Security)``
@@ -508,7 +508,7 @@ Zuweisen einer Anwendung zu einem Benutzer/einer Gruppe
 
 
 Zuweisen einzelner Elemente zu Benutzern/Gruppen
-============================================================
+[44444444444444444444444444444444444444444444444444444444444]
 Standardmäßig stehen alle Elemente den Benutzern/Gruppen zur Verfügung, die Zugriff auf eine Anwendung haben. Der Zugriff kann darüberhinaus für einzelne Elemente noch genauer definiert werden, so dass diese nur bestimmten Benutzern/Gruppen zur Verfügung stehen. 
 
 #. Bearbeiten Sie Ihre Anwendung über ``Anwendungen -->`` |mapbender3-button-edit| ``Editier-Button``
@@ -527,7 +527,7 @@ Standardmäßig stehen alle Elemente den Benutzern/Gruppen zur Verfügung, die Z
 
 
 Anwendung beim Start positionieren
-============================================================
+[44444444444444444444444444444444444444444444444444444444444]
 Sie können eine Anwendung beim Start positionieren. Dies kann über einen Punkt oder ein Rechteck erfolgen. Beim Start können dabei auch Texte zur Anzeige mitgegeben werden. Diese Funktionalität nutzt das Element Treffpunkt (Meetingpoint).
 
 Sie können dabei einen oder mehrere Punkte (POIS) in der URL übergeben. Jeder Punkt verfügt dabei über die folgenden Parameter:
@@ -555,7 +555,7 @@ Für die Übergabe vieler Punkte wird das folgende Format verwendet:
 
 
 Weitere Aufgaben
-================================================================================
+[4444444444444444444444444444444444444444444444444444444444444444444444444444444]
 
 Hier sind weitere Aufgaben, die Sie ausprobieren können:
 
@@ -565,7 +565,7 @@ Hier sind weitere Aufgaben, die Sie ausprobieren können:
 
 
 Was kommt als Nächstes?
-================================================================================
+[4444444444444444444444444444444444444444444444444444444444444444444444444444444]
 
 Dies waren nur die ersten Schritte mit Mapbender3. Es gibt viele weitere Funktionen, die Sie ausprobieren können.
 

@@ -1,5 +1,5 @@
 Benutzer
-========
+[4444444]
 
 Benutzer werden als FOM\\UserBundle\\Entity\\User implementiert und im
 Datenbank Repository gespeichert. Die Entität hält nur die notwendigen
@@ -18,7 +18,7 @@ Kommando den Benutzer zurücksetzen: fom:user:resetroot.
 
 
 Password vergessen
-------------------
+[55555555555555555]
 
 Falls ein Benutzer sein Passwort vergessen hat, kann er in der Login-Maske
 über den Link "Passwort vergessen" ein neues Passwort anfordern. Dazu gibt
@@ -41,7 +41,7 @@ Die Funktionalität kann in der config.yml ausgeschaltet werden.
 
 
 Registrierung
--------------
+[555555555555]
 
 Benutzer können sich an Mapbender3 selbst registrieren. Dafür stellt man in
 der config.yml die Einstellung fom_user:selfregister auf true.
@@ -66,7 +66,7 @@ Die Texte der Bestätigungsmail können unter
 
 
 Aktivieren von Nutzern
-----------------------
+[555555555555555555555]
 
 Seit Mapbender 3.0.5.3. Benutzer können von Administratoren mit mindestens
 der Benutzer ACL-Rolle "edit" aktiviert oder deaktiviert werden. Dazu dient
@@ -88,7 +88,7 @@ freigeschaltet werden.
 
 
 Login Fehler
-------------
+[55555555555]
 
 Fehlerhafte Logins werden mit der Meldung "Login fehlerhaft"
 kommentiert. Aus Sicherheitsgründen wird nicht genannt, ob es am falschen

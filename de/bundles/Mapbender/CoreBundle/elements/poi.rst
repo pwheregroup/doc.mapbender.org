@@ -1,7 +1,7 @@
 .. _poi:
 
 POI (Treffpunkt)
-**************************
+[5555555555555555555555555]
 
 Generiert POI-URLs (Treffpunkt-URLS), verwendbar für das Verschicken eines Koordinatenpunkts per eMail.
 
@@ -10,7 +10,7 @@ Generiert POI-URLs (Treffpunkt-URLS), verwendbar für das Verschicken eines Koor
      
 
 Konfiguration
-=============
+[666666666666]
 
 
 .. image:: ../../../../../figures/de/poi_configuration.png
@@ -33,16 +33,16 @@ YAML-Definition:
 
 
 Class, Widget & Style
-============================
+[666666666666666666666666666]
 
 * **Class:** Mapbender\CoreBundle\Element\POI
 * **Widget:** mapbender.mbPOI
 
 
 JavaScript API
-==============
+[6666666666666]
 
 defaultAction
--------------
+[777777777777]
 
 Ein Dialog wird geöffnet und wartet auf den nächsten Klick in der Karte, um einen POI Standort zu selektieren.

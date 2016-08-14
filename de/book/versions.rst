@@ -1,5 +1,5 @@
 Versionshistorie
-================
+[333333333333333]
 
 `English Version of this document. <../../en/book/versions.html>`_
 
@@ -9,7 +9,7 @@ Zukünftige Meilensteine: Details finden sich unter https://github.com/mapbender
 
 
 Milestone 3.0.5.3
------------------
+[4444444444444444]
 
 Release Datum: 04.02.2016
 
@@ -87,7 +87,7 @@ Allgemeine Änderungen:
     
     
 Milestone 3.0.5.2
------------------
+[4444444444444444]
 
 Release Datum: 27.10.2015
 
@@ -142,7 +142,7 @@ Release Datum: 27.10.2015
 
 
 Milestone 3.0.5.1
------------------
+[4444444444444444]
 
 Release Datum: 26.08.2015
 
@@ -191,7 +191,7 @@ Release Datum: 26.08.2015
 
  
 Milestone 3.0.5.0
------------------
+[4444444444444444]
 
 Release Datum: 01.07.2015
 
@@ -246,7 +246,7 @@ Release Datum: 01.07.2015
                     
 
 Milestone 3.0.4.1
------------------
+[4444444444444444]
 
 Release Datum: 23-01-2015
 
@@ -273,7 +273,7 @@ Release Datum: 23-01-2015
  
 
 Milestone 3.0.4.0
------------------
+[4444444444444444]
 
 Release Datum: 12-09-2014
 Übersicht der Änderungen finden Sie unter:  https://github.com/mapbender/mapbender-starter/blob/develop/CHANGELOG.md
@@ -291,7 +291,7 @@ Release Datum: 12-09-2014
  
 
 Milestone 3.0.3
-----------------
+[444444444444444]
 
 Release Datum: 17-03-2014
 Übersicht der Tickets finden Sie unter: https://github.com/mapbender/mapbender/issues?milestone=8
@@ -313,7 +313,7 @@ Release Datum: 17-03-2014
  
 
 Milestone 3.0.2
----------------
+[44444444444444]
 
 Release Datum: 27-11-2013
 Übersicht der Tickets finden Sie unter: https://github.com/mapbender/mapbender/issues?milestone=6
@@ -324,7 +324,7 @@ Release Datum: 27-11-2013
  
 
 Milestone 3.0.1
----------------
+[44444444444444]
 
 Release Datum: 06-09-2013
 
@@ -338,7 +338,7 @@ Release Datum: 06-09-2013
  
 
 Milestone 3.0.0.2
------------------
+[4444444444444444]
 
 Bugfix-Release Datum: 19-07-2013
 
@@ -347,7 +347,7 @@ Bugfix-Release Datum: 19-07-2013
  
 
 Milestone 3.0.0.1
------------------
+[4444444444444444]
 
 Bugfix-Release Datum: 07-06-2013
 
@@ -356,7 +356,7 @@ Bugfix-Release Datum: 07-06-2013
  
 
 Milestone 3.0.0.0
------------------
+[4444444444444444]
 
 Release Datum: 29-05-2013
 

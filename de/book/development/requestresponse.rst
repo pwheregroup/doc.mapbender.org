@@ -1,5 +1,5 @@
 Request / Response Workflow
-###########################
+[55555555555555555555555555]
 
 Dieses Dokument erklärt den Request/Response Workflow von Mapbender3. Es existieren drei Abläufe, die bekannt sein sollten:
 
@@ -8,7 +8,7 @@ Dieses Dokument erklärt den Request/Response Workflow von Mapbender3. Es existi
 * Manager Modul Workflow 
 
 Anwendungs Workflow
-********************
+[6666666666666666666]
 Die Standardanwendung controller /application/{slug} steuert die Mapbender\CoreBundle\Controller\Application::applicationAction($slug)-Funktion. Dieses funktioniert folgendermaßen:
 
 Grundsätzlich fragt der Controller den Mapbender-Service nach einer Anwendung mit dem gegebenen Namen Slug zu suchen. Zunächst sucht der Mapbender-Service die Anwendung in der Datenbank und nur, wenn er sie dort nicht findet, wird in den Anwendungen, die in der Konfigurations-YAML definiert sind, gesucht.
@@ -22,7 +22,7 @@ Zugriffsprüfungen werden nicht im Mapbender-Service, in der Entität oder in de
 .. image:: ../../../figures/http_workflow_application.png
 
 Element-Rendering-Workflow
-**************************
+[6666666666666666666666666]
 Bei dem Anwendungsrendering ist jedes Element aufgefordert, sich selbst zu rendern. Der Arbeitsablauf ist ein wenig kompliziert, aber grundsätzlich fragt die Anwendung ihre Vorlage, sich selbst zu rendern, welches die Vorlagen-Iteration für jedes Element und das Aufrufen der Elementrendering-Funktion beinhaltet.
 
 Die Render-Funktion verwendet normalerweise Twig zum Rendern eines HTML-Fragments. Dieses Fragment muss ein ID-Attribut enthalten, das der ID des Elements dynamisch von der Mapbender-Anwendung gegeben wird. Da diese IDs dynamisch generiert werden, dürfen Sie diese nicht für das Styling in ihrer Element-CSS verwenden.
@@ -36,7 +36,7 @@ Die Konfiguration der Elemente ist verfügbar:
 * In der Mapbender.configuration.elements JavaScript-Variable (für alle Elemente)
 
 Element Callback Workflow
-*************************
+[666666666666666666666666]
 Der übliche Element-Callback /application/{slug}/element/{id}/{action} wird an die Funktion  Mapbender\CoreBundle\Controller\ApplicationController::elementAction($slug, $id, $action) geleitet.
 
 Diese Funktion erledigt das gleiche wie applicationAction, um das Anwendungsobjekt zu erhalten. Dadurch wird der Zugriff auf die Anwendung geprüft. Es ist kein Zugriff auf das Element-Callback möglich, wenn der Benutzer nicht die Erlaubnis hat, die Anwendung zu verwenden.
@@ -69,7 +69,7 @@ Element Widgets können die Callback-URL zur Verwendung in ihrem Ajax-Aufruf kon
     })(jQuery);
 
 Manager-Workflow
-****************
+[666666666666666]
 
 Manager-Module sind einfache Symfony2 Controller-Klassen. Um ihre Routen sicherzustellen sind Präfixe mit /manager – oder welche Präfixe auch immer für das Manager Bundle konfiguriert wurde, nötig. Sie sollten nicht die Sensio\FrameworkExtraBundle\Configuration\Route Annotation verwenden, sondern die spezielle FOM\ManagerBundle\Configuration\Route Annotation. Derzeit ist die Annotations-Klasse noch nicht sehr speziell, aber sie erlaubt dem ManagerBundle die Präfixe zu erzwingen.
 

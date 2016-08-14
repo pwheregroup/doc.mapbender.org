@@ -1,7 +1,7 @@
 .. _legend:
 
 Legende
-************
+[55555555555]
 
 Dieses Element zeigt eine Legende der Layer an, die in der Karte dargestellt werden. Dabei wird jeder einzelne Layer mit seinen Punkte, Flächen und Linien aufgelistet.
 
@@ -9,7 +9,7 @@ Dieses Element zeigt eine Legende der Layer an, die in der Karte dargestellt wer
      :scale: 80
 
 Konfiguration
-=============
+[666666666666]
 
 .. image:: ../../../../../figures/de/legend_configuration.png
      :scale: 80
@@ -48,27 +48,27 @@ YAML-Definition:
 Für das Element wird ein Button oder die Sidepane verwendet. Zu der Konfiguration des Buttons besuchen sie die Dokumentationsseite unter :doc:`button`.
 
 Class, Widget & Style
-============================
+[666666666666666666666666666]
 
 * **Class:** Mapbender\\CoreBundle\\Element\\Legend
 * **Widget:** mapbender.element.legend.js
 * **Style:** mapbender.element.legend.css
 
 HTTP Callbacks
-==============
+[6666666666666]
 
 Keine.
 
 JavaScript API
-==============
+[6666666666666]
 
 open
-----------
+[777777777]
 
 Zeigt die Legend.
 
 
 JavaScript Signals
-==================
+[66666666666666666]
 
 Keine.

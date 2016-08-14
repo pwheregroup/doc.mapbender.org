@@ -1,7 +1,7 @@
 .. _scale_selector:
 
 Scale Selector (Maßstabsauswahl)
-************************************************
+[55555555555555555555555555555555555555555555555]
 
 Dieses Element zeigt eine Auswahlbox mit Maßstäben an. Der Kartenmaßstab ändert sich, wenn ein neuer Wert der Auswahlbox ausgewählt wurde.
 Beachten Sie: Die Auswahlbox zeigt nur Maßstäbe an, die vorher für das Map Element angegeben wurden.
@@ -11,7 +11,7 @@ Beachten Sie: Die Auswahlbox zeigt nur Maßstäbe an, die vorher für das Map El
      :scale: 100
 
 Konfiguration
-=============
+[666666666666]
 
 .. image:: ../../../../../figures/de/scale_selector_configuration.png
      :scale: 80
@@ -22,7 +22,7 @@ Konfiguration
 * **Target:** ID des Kartenelements, auf das sich das Element bezieht.
 
 YAML-Definition:
-----------------
+[777777777777777]
 
 .. code-block:: yaml
 
@@ -32,7 +32,7 @@ YAML-Definition:
 
 
 CSS-Styling
-===========
+[6666666666]
 
 Der Style des Elements (z.B. die Breite) kann mit folgendem CSS-Statement überschrieben werden:
 
@@ -47,23 +47,23 @@ Der Style des Elements (z.B. die Breite) kann mit folgendem CSS-Statement übers
 
 
 Class, Widget & Style
-=====================
+[66666666666666666666]
 
 * **Class:** Mapbender\\CoreBundle\\Element\\ScaleSelector
 * **Widget:** mapbender.element.scaleselector.js
 * **Style:** mapbender.elements.css
 
 HTTP Callbacks
-==============
+[6666666666666]
 
 Keine.
 
 JavaScript API
-==============
+[6666666666666]
 
 Keine.
 
 JavaScript Signals
-==================
+[66666666666666666]
 
 Keine.

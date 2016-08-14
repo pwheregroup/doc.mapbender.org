@@ -1,14 +1,14 @@
 .. _mapbender_templates:
 
 Mapbender Templates
-##########################
+[3333333333333333333333333]
 
 Lernen Sie die Mapbender Templates, die bei der Installation mitgeliefert werden, kennen.
 
 
 
 Fullscreen Template
-*********************
+[44444444444444444444]
 
 .. image:: ../../figures/mapbender_fullscreen.png
      :scale: 50
@@ -29,7 +29,7 @@ Specials:
 
 
 Fullscreen Alternative Template
-**********************************
+[444444444444444444444444444444444]
 
 ..
   .. image:: ../../figures/mapbender_mobile.png
@@ -50,7 +50,7 @@ Specials:
 
 
 Classic Template
-*********************
+[44444444444444444444]
 
 ..
   .. image:: ../../figures/mapbender_mobile.png
@@ -70,7 +70,7 @@ Specials:
 
 
 Mobile template
-*********************
+[44444444444444444444]
 
 .. image:: ../../figures/mapbender_mobile.png
      :scale: 80

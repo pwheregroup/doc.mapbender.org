@@ -1,7 +1,7 @@
 .. _wmc_editor:
 
 WMC Editor
-***********************
+[5555555555555555555555]
 
 Im Mapbender können mit dem WMC Editor Konfigurationen gespeichert und bearbeitet werden. 
 Diese Konfigurations können mit dem WMC-Lader geladen werden. Mehr dazu unter `WMC Loader <../elements/wmc_loader.html>`_.
@@ -20,7 +20,7 @@ Mit dem Editor können Konfigurationen erzeugt und bearbeitet werden. Es können
 
 
 Konfiguration
-=============
+[666666666666]
 
 .. image:: ../../../../../figures/wmc_editor_configuration.png
      :scale: 80
@@ -43,7 +43,7 @@ YAML-Definition:
 Für das Element wird ein Button benötigt. Siehe unter :ref:`button_de` für die Konfiguration.
 
 Class, Widget & Style
-==============
+[6666666666666]
 
 * **Class:** Mapbender\\WmcBundle\\Element\\WmcEditor
 * **Widget:** <Put Widget name here>
@@ -51,27 +51,27 @@ Class, Widget & Style
 
 
 HTTP Callbacks
-==============
+[6666666666666]
 
 
 <action>
---------------------------------
+[7777777777777777777777777777777]
 
 Öffnet einen Dialog mit einem Editor, in dem Konfigurationen gespeichert und bearbeitet werden können.
 
 
 JavaScript API
-==============
+[6666666666666]
 
 
 <function>
-----------
+[777777777]
 
 
 JavaScript Signals
-==================
+[66666666666666666]
 
 <signal>
---------
+[7777777]
 
 

@@ -1,7 +1,7 @@
 .. _digitizer:
 
 Digitalisierung (Digitizer) 
-**********************************
+[555555555555555555555555555555555]
 
 Das Digitizer-Element ermöglicht den Aufbau von Erfassungsoberflächen. Derzeit kann über eine YAML-Definition eine Erfassungsmaske für Punkte, Linien oder Flächen aufgebaut werden. Dabei wird bisher PostgreSQL als Datenquelle unterstützt. Oracle und SpatiaLite sind experimentell verfügbar. Die Entwicklung wurde so durchgeführt, dass die Erfassung auch auf andere Datenquellen wie z.B. OGC WFS erweitert werden kann.
 
@@ -39,7 +39,7 @@ Folgende Optionen stehen für den Aufbau von Formularen zur Verfügung:
      :scale: 80
 
 Konfiguration
-=============
+[666666666666]
 
 .. image:: ../../../../../figures/digitizer_configuration.png
      :scale: 80
@@ -55,7 +55,7 @@ Der Digitizer benötigt einen Zugriff auf die Datenbank, in der die zu editieren
 Die Definition des Digitizers wird in YAML-Syntax durchgeführt. Hier definieren Sie die Datenbankverbindung, die editierbaren Felder, das Formular für die Anzeige und andere Verhaltensweisen.
 
 YAML-Definition für das Element digitizer in der Sidepane in der mapbender.yml
------------------------------------------------------------------------------------------
+[7777777777777777777777777777777777777777777777777777777777777777777777777777777777777777]
 
 .. code-block:: yaml
 
@@ -69,7 +69,7 @@ YAML-Definition für das Element digitizer in der Sidepane in der mapbender.yml
 
 
 YAML-Definition für das Element digitizer in der Textarea unter schemes
------------------------------------------------------------------------------------------
+[7777777777777777777777777777777777777777777777777777777777777777777777777777777777777777]
 
 .. code-block:: yaml
 
@@ -256,7 +256,7 @@ YAML-Definition für das Element digitizer in der Textarea unter schemes
 
 
 SQL for the demo tables
-------------------------------
+[77777777777777777777777777777]
 
 .. code-block:: yaml
 
@@ -324,7 +324,7 @@ SQL for the demo tables
     
 
 Basisdefinition
---------------------------
+[7777777777777777777777777]
 
 .. code-block:: yaml
 
@@ -348,7 +348,7 @@ Basisdefinition
 
 
 Definition Popup
-----------------
+[777777777777777]
 
 .. code-block:: yaml
 
@@ -364,7 +364,7 @@ Definition Popup
 
 
 Definition der Objekttabelle 
-------------------------------------------------------------------------
+[77777777777777777777777777777777777777777777777777777777777777777777777]
 
 Der Digitizer stellt eine Objekttabelle bereit. Über diese kann auf die Objekte gezoomt werden und das Bearbeitsformular kann geöffnet werden kann. Die Objekttabelle ist sortierbar. Die Breite der einzelnen Spalten kann optional in Prozent oder Pixeln angegeben werden.
 
@@ -384,7 +384,7 @@ Der Digitizer stellt eine Objekttabelle bereit. Über diese kann auf die Objekte
 
 
 Definition von Dateireitern (type tabs)
---------------------------------------
+[7777777777777777777777777777777777777]
 
 .. code-block:: yaml
 
@@ -401,7 +401,7 @@ Definition von Dateireitern (type tabs)
 
 
 Definition von Textfeldern (type input)
-.......................................
+[88888888888888888888888888888888888888]
 
 .. code-block:: yaml
 
@@ -417,7 +417,7 @@ Definition von Textfeldern (type input)
 
 
 Definition von Auswahlboxen (selectbox oder multiselect [type select])
--------------------------------------------------------------------------
+[777777777777777777777777777777777777777777777777777777777777777777777777]
 
 select - ein Eintrag kann ausgewählt werden
 .. code-block:: yaml
@@ -444,7 +444,7 @@ multiselect - mehrere Einträge können ausgewählt werden
 
 
 Füllen der Auswahlboxen über eine SQL Abfrage
---------------------------------------------------
+[7777777777777777777777777777777777777777777777777]
 
 .. code-block:: yaml
 
@@ -457,7 +457,7 @@ Füllen der Auswahlboxen über eine SQL Abfrage
 
 
 Definition von Texten (type label)
---------------------------------------------------
+[7777777777777777777777777777777777777777777777777]
 
 .. code-block:: yaml
 
@@ -466,7 +466,7 @@ Definition von Texten (type label)
 
 
 Definition eines Textes
--------------------------------
+[777777777777777777777777777777]
 
 Im Formular können Texte definiert werden. Hierbei kann auf Felder der Datenquelle zugegriffen werden. Darüber hinaus kann JavaScript verwendet werden.
 
@@ -492,7 +492,7 @@ Im Formular können Texte definiert werden. Hierbei kann auf Felder der Datenque
                                                   text: data.id + ':' + data.name
 
 Definition von Textbereichen (type textArea)
---------------------------------------------------------------
+[7777777777777777777777777777777777777777777777777777777777777]
 
 .. code-block:: yaml
 
@@ -503,7 +503,7 @@ Definition von Textbereichen (type textArea)
 
 
 Definition of a Trennlinien (type breakline)
---------------------------------------------------
+[7777777777777777777777777777777777777777777777777]
 
 .. code-block:: yaml
 
@@ -511,7 +511,7 @@ Definition of a Trennlinien (type breakline)
 
 
 Definition von Checkboxen (type checkbox)
---------------------------------------------------
+[7777777777777777777777777777777777777777777777777]
 
 .. code-block:: yaml
 
@@ -522,7 +522,7 @@ Definition von Checkboxen (type checkbox)
 
 
 Definition von Pflichtfeldern
---------------------------------------------------
+[7777777777777777777777777777777777777777777777777]
 
 .. code-block:: yaml
 
@@ -538,7 +538,7 @@ Definition von Pflichtfeldern
 
 
 Definition eines Textfelds mit Datumsauswahl
---------------------------------------------------
+[7777777777777777777777777777777777777777777777777]
 
 .. image:: ../../../../../figures/digitizer_datepicker.png
      :scale: 80
@@ -551,7 +551,7 @@ Definition eines Textfelds mit Datumsauswahl
 
 
 Definition von Hilfetexten zu den Eingabefeldern (type infotext)
-------------------------------------------------------------------------------------------
+[77777777777777777777777777777777777777777777777777777777777777777777777777777777777777777]
 
 .. code-block:: yaml
 
@@ -564,7 +564,7 @@ Definition von Hilfetexten zu den Eingabefeldern (type infotext)
 
 
 Definition von Gruppierungen (type: fieldSet)
---------------------------------------------------
+[7777777777777777777777777777777777777777777777777]
 
 Elemente können in einer Zeile gruppiert werden, um logische Einheiten zu bilden oder um Platz zu sparen. Hierbei muss ein fieldSet definiert werden. Anschließend können die Elemente der Gruppe unter children angegeben werden.
 
@@ -589,7 +589,7 @@ Für jedes Gruppenelement kann eine Breite angegeben werden, um den Platz den je
 
 
 Definition von Feldern für den Dateiupload
---------------------------------------------------
+[7777777777777777777777777777777777777777777777777]
 
 .. code-block:: yaml
   
@@ -604,7 +604,7 @@ Definition von Feldern für den Dateiupload
 
 
 Definition von Bildern
---------------------------------------------------
+[7777777777777777777777777777777777777777777777777]
 
 .. code-block:: yaml
                       
@@ -623,7 +623,7 @@ Definition von Bildern
 
 
 Definition der zur Verfügung stehenden Werkzeuge (Toolset Type)
-------------------------------------------------------------------------
+[77777777777777777777777777777777777777777777777777777777777777777777777]
 
 Werkzeugliste
 
@@ -664,7 +664,7 @@ Definition der für die Erfassung verwendeten Toolset Typen
 
 
 Class, Widget & Style
-===========================
+[66666666666666666666666666]
 
 * Class: Mapbender\\DigitizerBundle\\Element\\Digitizer
 * Widget: mapbender.element.digitizer.js
@@ -672,26 +672,26 @@ Class, Widget & Style
 
 
 HTTP Callbacks
-==============
+[6666666666666]
 
 
 
 <action>
---------------------------------
+[7777777777777777777777777777777]
 
 
 JavaScript API
-==============
+[6666666666666]
 
 
 <function>
-----------
+[777777777]
 
 
 JavaScript Signals
-==================
+[66666666666666666]
 
 <signal>
---------
+[7777777]
 
 

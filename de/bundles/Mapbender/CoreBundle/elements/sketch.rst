@@ -1,7 +1,7 @@
 .. _sketch:
 
 Sketch
-***********************
+[5555555555555555555555]
 
 Das Skizzen (Sketch) Element fügt einen Vektorlayer in der Karte hinzu, wodurch Geometrieobjekte temporär gezeichnet werden.
 
@@ -9,7 +9,7 @@ Das Skizzen (Sketch) Element fügt einen Vektorlayer in der Karte hinzu, wodurch
      :scale: 80
 
 Konfiguration
-================
+[666666666666666]
 
 .. image:: ../../../../../figures/de/sketch_configuration.png
      :scale: 80
@@ -32,30 +32,30 @@ YAML-Definition:
 Für das Element wird ein Button verwendet. Zu der Konfiguration des Buttons besuchen sie die Dokumentationsseite unter :doc:`button`.
 
 Class, Widget & Style
-============================
+[666666666666666666666666666]
 
 * **Class:** Mapbender\\CoreBundle\\Element\\Sketch
 * **Widget:** mapbender.element.sketch.js
 
 HTTP Callbacks
-=====================
+[66666666666666666666]
 
 Keine.
 
 JavaScript API
-==============
+[6666666666666]
 
 activate
---------
+[7777777]
 
 Aktiviert das Element. Dieses wartet auf einen Mausklick in die Karte, um das Zeichnen zu starten
 
 deactivate
-----------
+[777777777]
 
 Deaktiviert das Element.
 
 JavaScript Signals
-==================
+[66666666666666666]
 
 Keine.

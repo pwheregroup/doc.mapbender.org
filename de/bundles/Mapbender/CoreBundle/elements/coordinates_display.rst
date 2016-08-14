@@ -1,7 +1,7 @@
 .. _coordinates_display:
 
 Coordinates Display (Koordinatenanzeige)
-****************************************
+[555555555555555555555555555555555555555]
 
 Das Koordinatenanzeige-Element zeigt die aktuelle Mausposition in den Kartenkoordinaten. Die Koordinaten sind abhängig vom eingestellten räumlichen Referenzsystem, welches im `Spatial Reference System Selector <../elements/srs_selector.html>`_ geändert werden kann.
 
@@ -9,7 +9,7 @@ Das Koordinatenanzeige-Element zeigt die aktuelle Mausposition in den Kartenkoor
      :scale: 90
 
 Konfiguration
-=============
+[666666666666]
 
 .. image:: ../../../../../figures/de/coordinates_display_configuration.png
      :scale: 80
@@ -25,7 +25,7 @@ Konfiguration
 * **Separator:** Separator nach X- und vor Y-Koordinate (Standard ' y= ').
 
 YAML-Definition:
-----------------
+[777777777777777]
 
 .. code-block:: yaml
 
@@ -39,7 +39,7 @@ YAML-Definition:
 
 
 CSS-Styling
-===========
+[6666666666]
 
 Das Element kann über den folgenden CSS-Style angepasst werden, beispielsweise um die Breite zu vergrößern.
 
@@ -51,31 +51,31 @@ Das Element kann über den folgenden CSS-Style angepasst werden, beispielsweise 
 
 
 Class, Widget & Style
-=====================
+[66666666666666666666]
 
 * **Class:** Mapbender\\CoreBundle\\Element\\CoordinatesDisplay
 * **Widget:** mapbender.element.coordinatesdisplay.js
 * **Style:** mapbender.elements.css
 
 HTTP Callbacks
-==============
+[6666666666666]
 
 Keine.
 
 JavaScript API
-==============
+[6666666666666]
 
 reset
------
+[7777]
 
 <>
 
 showHidde
-----------
+[777777777]
 
 <>
 
 JavaScript Signals
-==================
+[66666666666666666]
 
 Keine.

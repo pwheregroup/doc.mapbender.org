@@ -1,7 +1,7 @@
 .. _copyright:
 
 Copyright
-************
+[55555555555]
 
 Dieses Element zeigt die Nutzungsbedingungen ("Terms of use") in einem Dialog an.
 
@@ -9,7 +9,7 @@ Dieses Element zeigt die Nutzungsbedingungen ("Terms of use") in einem Dialog an
      :scale: 80
 
 Konfiguration
-=============
+[666666666666]
 
 .. image:: ../../../../../figures/de/copyright_configuration.png
      :scale: 80
@@ -32,23 +32,23 @@ YAML-Definition:
                 
 
 Class, Widget & Style
-======================
+[666666666666666666666]
 
 * **Class:** Mapbender\\CoreBundle\\Element\\Copyright
 * **Widget:** mapbender.element.copyright.js
 * **Style:** mapbender.elements.css
 
 HTTP Callbacks
-==============
+[6666666666666]
 
 Keine.
 
 JavaScript API
-==============
+[6666666666666]
 
 Keine.
 
 JavaScript Signals
-==================
+[66666666666666666]
 
 Keine.

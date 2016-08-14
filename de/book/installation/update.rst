@@ -1,7 +1,7 @@
 .. _update:
 
 Aktualisierung von Mapbender3 auf eine neuere Version
-=====================================================
+[4444444444444444444444444444444444444444444444444444]
 
 Um Mapbender3 zu aktualisieren, müssen Sie die folgenden Schritte durchführen:
 
@@ -17,7 +17,7 @@ Um Mapbender3 zu aktualisieren, müssen Sie die folgenden Schritte durchführen:
 
 
 Aktualisierungsbeispiel für Linux
-------------------------------------
+[55555555555555555555555555555555555]
 Im Folgenden sind die einzelnen Schritte als Befehle aufgeführt.
 
 .. code-block:: bash
@@ -68,7 +68,7 @@ Im Folgenden sind die einzelnen Schritte als Befehle aufgeführt.
 
 
 Aktualisierungsbeispiel für Windows
-------------------------------------
+[55555555555555555555555555555555555]
  
 .. code-block:: bash
 

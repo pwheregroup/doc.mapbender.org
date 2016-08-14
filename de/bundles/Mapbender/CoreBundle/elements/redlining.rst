@@ -2,7 +2,7 @@
 
 
 Redlining
-*********
+[55555555]
 
 Mit dem Element Redlining können temporär verfügbaren Geometrien in der Karte erstellt werden. Temporär bedeutet, dass die Objekte nicht in einer Datenbank gespeichert werden und beim Neustart der Anwendung verloren gehen.
 
@@ -21,7 +21,7 @@ Die möglichen Geometrietypen sind:
 
 
 Konfiguration
-=============
+[666666666666]
 
 .. image:: ../../../../../figures/de/redlining/redlining_configuration.png
      :scale: 80
@@ -34,22 +34,22 @@ Konfiguration
 
 
 Als Dialog
-----------
+[777777777]
 
 Setzen Sie den Display type auf "Dialog". Sie benötigen eine Schaltfläche, um das Redlining als Dialog zu öffnen. Wählen Sie z.B. das Sketch Symbol als Toolbar-Icon aus und setzen Sie als Target den Namen des Elements.
 
 
 In der Sidepane
----------------
+[77777777777777]
 
 Sie können das Redlining auch in die Sidepane positionieren. Setzen Sie **Display** type auf "Element".
 
 
 Nutzung
-=======
+[666666]
 
 Objekte setzen
---------------
+[7777777777777]
 
 Punkte: Wählen Sie die Schaltfläche "Punkt" und setzen Sie einen Punkt in der Karte.
 
@@ -65,13 +65,13 @@ Sobald Sie die Schaltfläche eines Geometrietyps geklickt haben, ist die Schaltf
 
 
 Objekte löschen
----------------
+[77777777777777]
 
 Mit dem X-Symbol können Sie das jeweilige Objekt aus der Karte löschen.
 
 
 Objekte verändern
------------------
+[7777777777777777]
 
 Mit dem Stift-Symbol können Sie das jeweilige Objekt verschieben oder verändern. Das jeweilige Objekt wird hervorgehoben. Mit einem Klick in die Karte schließen Sie das Verändern ab.
 
@@ -92,20 +92,20 @@ Texte können verschoben werden. Der Ankerpunkt eines Textes befindet sich an de
 
 
 Zu Objekten zoomen
-------------------
+[77777777777777777]
 
 Mit dem Lupen-Symbol können Sie zu dem jeweiligen Objekt zoomen.
 
 
 Den Zeichnen-Modus verlassen
-----------------------------
+[777777777777777777777777777]
 
 Wenn Sie mit dem Zeichnen fertig sind, klicken Sie wieder auf die Schaltfläche des Geometrietyps, den Sie gezeichnet haben. Die Schaltfläche wird inaktiv und bei einem Klick auf der Karte wird wieder das normale Verhalten ausgeführt.
 
 
 
 YAML-Definition
-===============
+[66666666666666]
 
 .. code-block:: yaml
 
@@ -123,7 +123,7 @@ YAML-Definition
  
 
 Class, Widget & Style
-=====================
+[66666666666666666666]
 
 * **Class:** Mapbender/CoreBundle/Element/Redlining
 * **Widget:** Mapbender/CoreBundle/Resources/public/mapbender.element.redlining.js

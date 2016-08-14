@@ -2,7 +2,7 @@
 
 
 Access Control Lists (ACL)
-==========================
+[4444444444444444444444444]
 
 Die Absicherung von Domain-Objekten (generell Datenbank Entities) wird über
 Access Control Lists (ACL) implementiert. ACLs ermöglichen eine flexible
@@ -23,7 +23,7 @@ Jedes ACL baut sich aus einer Objekt Identity und bestimmten Access Control Entr
 
 
 Objekt Identität
-----------------
+[555555555555555]
 
 ACLs werden nicht direkt den Objekten zugeordnet sondern den sogenannten
 Objekt Identities. Diese repräsentieren individuelle Objekte oder Klassen
@@ -31,7 +31,7 @@ Objekt Identities. Diese repräsentieren individuelle Objekte oder Klassen
 
 
 Access Control Entries
-----------------------
+[555555555555555555555]
 
 Jedes ACE enthält die Rechte für einen Benutzer oder eine Rolle. Die Rechte
 werden als Interger Bit abgelegt, daher können 32 Rechte verwaltet
@@ -42,7 +42,7 @@ modellieren und die restlichen 23 für Eigenentwicklungen vorzuhalten.
 
 
 Security Identität
-------------------
+[55555555555555555]
 
 ACEs können entweder mit Benutzern oder Rollen assoziiert werden, um damit
 beide mit einer Security Identität zu kapseln.

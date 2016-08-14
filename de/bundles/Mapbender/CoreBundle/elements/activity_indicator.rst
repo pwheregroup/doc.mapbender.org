@@ -1,7 +1,7 @@
 .. _activity_indicator:
 
 Activity Indicator (Aktivitätsindikator)
-******************************************************
+[55555555555555555555555555555555555555555555555555555]
 
 Der Aktivitätsindikator (Sanduhr) ist ein einfaches Modul, das Aktivitäten anzeigt (Ajax-Aufrufe und Kartenaufrufe). In der voreingestellten Konfiguration wird ein Schrift-Symbol verwendet. Dieses kann ganz einfach in der css-Datei ``fom//src//FOM//CoreBundle//Resources//public//css/frontend//mapbender3_theme.css`` geändert werden.
 
@@ -9,7 +9,7 @@ Der Aktivitätsindikator (Sanduhr) ist ein einfaches Modul, das Aktivitäten anz
      :scale: 100
 
 Konfiguration
-=============
+[666666666666]
 
 .. image:: ../../../../../figures/de/activity_indicator_configuration.png
      :scale: 80
@@ -31,23 +31,23 @@ YAML-Definition:
     tileActivityClass: mb-activity-tile # CSS Klasse, die Kartenaufrufe anzeigt
 
 Class, Widget & Style
-============================
+[666666666666666666666666666]
 
 * **Class:** Mapbender\\CoreBundle\\Element\\ActivityIndicator
 * **Widget:** mapbender.element.activityindicator.js
 * **Style:** mapbender.elements.css
 
 HTTP Callbacks
-==============
+[6666666666666]
 
 Keine.
 
 JavaScript API
-==============
+[6666666666666]
 
 Keine.
 
 JavaScript Signals
-==================
+[66666666666666666]
 
 Keine.

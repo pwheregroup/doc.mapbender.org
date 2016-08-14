@@ -1,7 +1,7 @@
 .. _about_dialog:
 
 About Dialog (Über-Dialog)
-********************************
+[5555555555555555555555555555555]
 
 Dieses Element rendert einen `Button <../elements/button.html>`_, der einen Dialog mit der aktuellen Mapbender Version anzeigt. Der Button kann im Standard-Tempalte wie gehabt in der Toolbar verwendet werden oder auch in die Footer Region positioniert werden.
 
@@ -9,7 +9,7 @@ Dieses Element rendert einen `Button <../elements/button.html>`_, der einen Dial
      :scale: 80
 
 Konfiguration
-=============
+[666666666666]
 
 .. image:: ../../../../../figures/de/about_dialog_configuration.png
      :scale: 80
@@ -21,7 +21,7 @@ Konfiguration
 
 
 YAML-Definition:
-----------------
+[777777777777777]
 
 .. code-block:: yaml
 
@@ -32,27 +32,27 @@ YAML-Definition:
 
    
 Class, Widget & Style
-======================
+[666666666666666666666]
 
 * **Class:** Mapbender\\CoreBundle\\Element\\AboutDialog
 * **Widget:** mapbender.mbAboutDialog
 * **Style:** mapbender.elements.css
 
 HTTP Callbacks
-==============
+[6666666666666]
 
 about
------
+[7777]
 
 Ruft Inhalte des Dialogs auf.
 
 JavaScript API
-==============
+[6666666666666]
 
 Keine.
 
 JavaScript Signals
-==================
+[66666666666666666]
 
 Keine.
 

@@ -1,7 +1,7 @@
 .. _basesourceswitcher:
 
 BaseSourceSwitcher (Themenwechsel)
-*********************************************************************
+[55555555555555555555555555555555555555555555555555555555555555555555]
 
 Mit diesem Element kann zwischen vordefinierten Themen (BaseSources) z.B. Hintergrundkarten gewechselt werden. Über Buttons kann zwischen den Themen gewechselt werden. Es kann dabei immer nur ein Thema aktiv sein.
 
@@ -11,7 +11,7 @@ Zu jeder Datenquelle kann eine Gruppe definiert werden. Alle Definitionen einer 
      :scale: 80
 
 Konfiguration
-=============
+[666666666666]
 
 Die Konfiguration geschieht in zwei Schritten:
 
@@ -47,23 +47,23 @@ YAML-Definition:
         
 
 Class, Widget & Style
-============================
+[666666666666666666666666666]
 
 * **Class:** Mapbender\\CoreBundle\\Element\\BaseSourceSwitcher
 * **Widget:** mapbender.element.basesourceswitcher.js
 
 
 HTTP Callbacks
-==============
+[6666666666666]
 
 Keine.
 
 JavaScript API
-==============
+[6666666666666]
 
 Keine.
 
 JavaScript Signals
-==================
+[66666666666666666]
 
 Keine.

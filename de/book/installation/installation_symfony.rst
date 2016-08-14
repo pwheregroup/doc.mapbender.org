@@ -1,7 +1,7 @@
 .. _installation_symfony:
 
 Installation im Symfony eigenen Webserver
-#########################################
+[4444444444444444444444444444444444444444]
 
 Mapbender3 baut auf dem `Symfony <http://symfony.com/>`_ Framework auf und kann daher den in `Symfony eingebauten Webserver <http://symfony.com/doc/current/cookbook/web_server/built_in.html>`_ nutzen. Das ermöglicht Ihnen einen schnellen Test von Mapbender3, ohne eine Integration in einen Webserver vorzunehmen. Dies eignet sich nicht für Produktivumgebungen. In dieser Anleitung wird die SQLite Datenbank verwendet. 
 
@@ -25,7 +25,7 @@ Mapbender3 baut auf dem `Symfony <http://symfony.com/>`_ Framework auf und kann 
 
 
 In Virtuellen Umgebungen
-************************
+[55555555555555555555555]
 
 Falls Sie Mapbender3 in einer virtuellen Maschine laufen lassen wollen und über den Hostrechner darauf zugreifen möchten, geben Sie folgenden Befehl ein.
 

@@ -1,7 +1,7 @@
 .. _layertree:
 
 Layertree - Table of Content (Layerbaum)
-********************************************************
+[5555555555555555555555555555555555555555555555555555555]
 
 Der Layerbaum zeigt die Layer und die Service-Ordner an. Im Layerbaum können einzelne Layer in der Karte aktiviert und deaktiviert werden. 
 Hier kann auch die Infoabfrage für einzelne Layer aktiviert oder deaktiviert werden. 
@@ -17,7 +17,7 @@ Seit Version 3.0.5 erlaubt der Layertree die Anzeige mehrerer Layersets, die als
         :scale: 80
 
 Konfiguration
-=============
+[666666666666]
 
 Um die unterschiedlichen Layersets im Layertree nutzen zu können, sind
 verschiedene Anpassungen notwendig. Diese betreffen die:
@@ -33,7 +33,7 @@ In dem folgenden Beispiel sind zwei Layersets mit jeweils zwei Instanzen definie
 
 
 Konfiguration der Layersets
----------------------------
+[77777777777777777777777777]
 
 Die Layersets werden wie gewohnt in der Applikation unter dem Reiter
 Layerset definiert. Die Instanzen sind weiterhin die Referenzen auf die
@@ -46,7 +46,7 @@ gehabt – für die Anzeige der Übersichtskarte verwendet.
 
 
 Konfiguration der Karte
------------------------
+[7777777777777777777777]
 
 Der zweite Schritt ist die Konfiguration der `Hauptkarte <../elements/map.html>`_ . Hier
 gibt man an, welche Layersets in der Kartenansicht verwendet werden
@@ -74,7 +74,7 @@ definierten Themen die darunter liegenden überdecken können.
 
 
 Konfiguration des Layertrees
-----------------------------
+[777777777777777777777777777]
 
 Der letzte Schritt ist die Konfiguration des Layertrees selbst. Die in der
 Main Map angegebenen Instanzen können im Layertree noch genauer definiert
@@ -159,31 +159,31 @@ Der Layerbaum kann auch als Element definiert werden. Dann wird der Layerbaum in
     themes: {  }                 #   
 
 Class, Widget & Style
-======================
+[666666666666666666666]
 
 * **Class:** Mapbender\\CoreBundle\\Element\\Layertree
 * **Widget:** mapbender.element.layertree.js
 * **Style:** mapbender.elements.css
 
 HTTP Callbacks
-==============
+[6666666666666]
 
 Keine.
 
 JavaScript API
-==============
+[6666666666666]
 
 open
-----------
+[777777777]
 
 Öffnet den Layerbaum (layertree)
 
 reload
-----------
+[777777777]
 
 
 JavaScript Signals
-==================
+[66666666666666666]
 
 Keine.
 

@@ -1,7 +1,7 @@
 .. _button_de:
 
 Button
-******
+[55555]
 
 Dieses Element stellt ein Button-Modul bereit. Einige Elemente wie die `Legende <../elements/legend.html>`_, `Layertree (Layerbaum) <layertree.html>`_, `FeatureInfo (Infoabfrage) <../elements/feature_info.html>`_, `Linien- und Flächenberechnung <../elements/ruler.html>`_ und der `Druck <../elements/printclient.html>`_ benötigen einen Button, um einen Dialog anzuzeigen oder um aktiviert zu werden, wenn das Element nicht in einem Frame definiert wurde.
 
@@ -9,7 +9,7 @@ Buttons können optional gruppiert werden, so dass nur ein Button in der Gruppe 
 Es kann außerdem ein Button definiert werden, der sich auf eine Webseite oder ein Script bezieht und bei Aktivierung zu diesem weiterleitet.
 
 Konfiguration
-=============
+[666666666666]
 
 .. image:: ../../../../../figures/de/button_configuration.png
      :scale: 80
@@ -42,32 +42,32 @@ YAML-Definition:
     deactivate: ~ # Methode, die aufgerufen wird, wenn der Button deaktiviert wird
 
 Class, Widget & Style
-=====================
+[66666666666666666666]
 
 * **Class:** Mapbender\\CoreBundle\\Element\\Button
 * **Widget:** mapbender.mbButton (mapbender.element.button.js)
 * **Style:** mapbender.elements.css
 
 HTTP Callbacks
-==============
+[6666666666666]
 
 Keine.
 
 JavaScript API
-==============
+[6666666666666]
 
 activate
---------
+[7777777]
 
 Aktiviert den Button. Wird über einen Klick aufgerufen, wenn der Button deaktiviert ist.
 
 deactivate
-----------
+[777777777]
 
 Deaktiviert den Button. Wird über einen Klick aufgerufen, wenn der Button aktiviert ist oder wenn ein anderer Button der gleichen Gruppe aktiviert ist.
 
 JavaScript Signals
-==================
+[66666666666666666]
 
 Keine.
 

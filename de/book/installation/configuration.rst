@@ -2,10 +2,10 @@
 
 
 Details zur Konfiguration von Mapbender3
-========================================
+[444444444444444444444444444444444444444]
 
 Konfigurationsschritte
-----------------------
+[555555555555555555555]
 
 Im Folgenden werden die für die Mapbender3-Installation aufgeführten Konfigurationsschritte von Mapbender3 näher erläutert. Es sind sechs Schritte notwendig:
 
@@ -31,7 +31,7 @@ Diese Schritte werden mit dem console-Hilfsprogramm des `Symfony <http://symfony
 
 
 Anpassen der Konfigurationsdatei
-^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+[666666666666666666666666666666]
 
 Die Parameter der Datenbankverbindung sind zusammen mit einigen anderen Konfigurationsparametern in der Datei app/config/parameters.yml gespeichert. In dieser Datei wird YAML Syntax verwendet. Achten Sie darauf **keine** Tabulatoren für Einrückungen zu verwenden. Verwenden Sie stattdessen Leerzeichen.
 
@@ -51,7 +51,7 @@ Mehr Informationen dazu finden Sie im Kapitel `Konfiguration der Datenbank <../d
 
     
 Erzeugen der Datenbank
-^^^^^^^^^^^^^^^^^^^^^^^^ 
+[666666666666666666666666]
 
 Mit Symfony2 kann die Datenbank erzeugt werden. Beachten Sie, dass dazu die benötigten Datenbank-Benutzerrechte vorliegen. Rufen Sie folgenden Befehl mit dem console-Hilfsprogramm auf:
 
@@ -61,7 +61,7 @@ Mit Symfony2 kann die Datenbank erzeugt werden. Beachten Sie, dass dazu die ben�
 
 
 Erzeugen des Datenbankschemas
-^^^^^^^^^^^^^^^^^^^^^^^^^^^^^ 
+[66666666666666666666666666666]
 
 Erzeugen des Datenbankschemas über Symfony2:
 
@@ -71,7 +71,7 @@ Erzeugen des Datenbankschemas über Symfony2:
 
     
 Kopieren des Bundles assets
-^^^^^^^^^^^^^^^^^^^^^^^^^^^ 
+[666666666666666666666666666]
 
 Jedes Bundle hat seine eigenen Abhängigkeiten - CSS-Dateien, JavaScript-Dateien, Bilder und mehr – diese müssen in das öffentliche web-Verzeichnis kopiert werden:
 
@@ -88,7 +88,7 @@ Sie können auch einen symbolischen Link verwenden, statt die Dateien zu kopiere
 
 
 Erzeugen des administrativen Benutzers
-^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^ 
+[66666666666666666666666666666666666666]
 
 Der erste Benutzer, der alle Privilegien hat, wird mit folgendem Kommando erzeugt:
 
@@ -106,7 +106,7 @@ Sie können auch den Modus "silent" verwenden, wenn Sie ein Skript nutzen möcht
 
 
 Einfügen den SRS Parameter
-^^^^^^^^^^^^^^^^^^^^^^^^^^
+[6666666666666666666666666]
 
 Fügen Sie die Informationen zu SRS Parametern über den folgenden Aufruf in die Datenbank:
 
@@ -116,7 +116,7 @@ Fügen Sie die Informationen zu SRS Parametern über den folgenden Aufruf in die
 
 
 Importieren von Anwendungen aus der mapbender.yml
-^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+[666666666666666666666666666666666666666666666666]
 
 Sie können die Anwendungen, die in der mapbender.yml definiert sind, in die Datenbank importieren:
 
@@ -128,7 +128,7 @@ Sie können die Anwendungen, die in der mapbender.yml definiert sind, in die Dat
 
 
 Konfigurationsdateien
----------------------
+[55555555555555555555]
 
 Die Basiskonfiguration erfolgt in der Datei **app/config/parameters.yml**. Eine Vorlage app/config/parameters.yml.dist liegt vor. 
 
@@ -136,7 +136,7 @@ Die Konfigurationsdatei **app/config/config.yml** stellt weitere Parameter berei
 
 
 parameters.yml
-^^^^^^^^^^^^^^
+[6666666666666]
 
 * Datenbank: Parameter, die mit **database** beginnen, definieren die Databankverbindung. 
 * Mailer: Die Mailerangaben starten mit **mailer**. Nutzen Sie z.B. smtp oder sendmail. 
@@ -163,7 +163,7 @@ Eine Konfiguration könnte wie folgt aussehen:
             - 192.168.1.123
 
 config.yml
-^^^^^^^^^^
+[666666666]
 
 * fom_user.selfregistration: Um die Selbstregistrierung zu de/aktivieren, passen Sie den fom_user.selfregistration Parameter an. Sie müssen unter self_registration_groups eine/mehrere Gruppen angeeben, so dass selbstregistriere Anwender automatisch (bei der Registrierung) diesen Gruppen zugewiesen werden. Über die Gruppe bekommen Sie dann entsprechend Rechte zugewiesen.
 * fom_user.reset_password: Über diesen Parameter kann die Möglichkeit de/aktiviert werden, das Passwort neu zu setzen.
@@ -173,7 +173,7 @@ config.yml
 
 
 mapbender.yml
-^^^^^^^^^^^^^
+[666666666666]
 
 Eine Anwendung kann auf zwei Arten konfiguriert werden. Entweder über die mapbender.yml Datei oder über die Mapbender3 Administration im Browser.
 
@@ -188,7 +188,7 @@ Eine Anwendung kann auf zwei Arten konfiguriert werden. Entweder über die mapbe
 
 
 Produktions- und Entwicklerumgebung und Caches: app.php und app_dev.php
------------------------------------------------------------------------
+[5555555555555555555555555555555555555555555555555555555555555555555555]
 
 Mapbender3 bietet zwei Umgebungen an: eine Produktionsumgebung für den
 normalen Betrieb- und eine Entwicklerumgebung, in dem die Anwendungen
@@ -240,7 +240,7 @@ Mapbender3:
 
 
 Logging in Mapbender3
----------------------
+[55555555555555555555]
 
 Das Log-Level wird in den Dateien ``config_dev.yml`` und ``config_prod.yml`` definiert. Diese liegen im Ordner ``application/app/config/``. Die config-Dateien sind für die jeweiligen Umgebungen (siehe `Produktions- und Entwicklungsumgebung <configuration.html#produktions-und-entwicklerumgebung-und-caches-app-php-und-app-dev-php>`_) verantwortlich.
 
@@ -248,7 +248,7 @@ In der Entwicklungsumgebung (bei der Entwicklung in lokalen Systemen) wird Mapbe
 
 
 Loglevel
-^^^^^^^^
+[6666666]
 
 Es gibt insgesamt 6 Loglevel (englische Beschreibung):
 
@@ -265,7 +265,7 @@ Die Beschreibung der Loglevels orientiert sich an dem `Syslog Protocol der IETF 
 
 
 config_dev.yml
-^^^^^^^^^^^^^^
+[6666666666666]
 
 Der verantwortliche Teil in der ``config_dev.yml`` ist im Abschnitt "monolog" zu finden:
 
@@ -292,7 +292,7 @@ Diese sind die die bevorzugten Einstellungen für Entwicklungsarbeiten.
 
 
 config_prod.yml
-^^^^^^^^^^^^^^^
+[66666666666666]
 
 .. code-block:: yaml
 

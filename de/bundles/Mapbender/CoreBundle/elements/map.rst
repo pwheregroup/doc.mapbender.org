@@ -1,7 +1,7 @@
 .. _map:
 
 Map (Karte)
-***********************
+[5555555555555555555555]
 
 MapQuery/OpenLayers basierte Karte.
 Es müssen die Einheiten, der Start und der Max Bereich (extent), die Maßstäbe und die unterstützten Projektionen angegeben werden.
@@ -10,7 +10,7 @@ Es müssen die Einheiten, der Start und der Max Bereich (extent), die Maßstäbe
      :scale: 80
 
 Konfiguration
-=============
+[666666666666]
 
 .. image:: ../../../../../figures/de/map_configuration.png
      :scale: 80
@@ -58,10 +58,10 @@ YAML-Definition:
 
 
 Kontrolle über URL-Parameter
-============================
+[666666666666666666666666666]
 
 Ebenen sichtbar machen
-------------------------
+[77777777777777777777777]
 
 Sie können die ID der Ebene mit der ID <layerid> und des Dienstes <serviceid> in der URL als parameter übergeben, um einen Layer in der Startansicht zu aktivieren.
 
@@ -98,7 +98,7 @@ Zum Beispiel: http://localhost/mapbender/application/myapp?visiblelayers=73/836,
 
 
 Punkte übergeben
-------------------------
+[77777777777777777777777]
 
 Sie können einen oder mehrere Punkte in der URL übergeben. Jeder Punkt verfügt dabei über die folgenden Parameter:
 
@@ -123,7 +123,7 @@ Für die Übergabe vieler Punkte wird das folgende Format verwendet:
 
 
 Rechteck (BBOX) übergeben
-------------------------------------------------
+[77777777777777777777777777777777777777777777777]
 
 Es kann ein Rechteck (BBOX) beim Start übergeben werden. Es wird dann auf dieses Rechteck gezoomt. Der Aufruf sieht wie folgt aus:
 
@@ -133,7 +133,7 @@ Es kann ein Rechteck (BBOX) beim Start übergeben werden. Es wird dann auf diese
 
 
 Maßstab übergeben
-------------------
+[77777777777777777]
 
 Es kann der gewünschte Maßstab aus der Liste der verfügbaren Maßstäbe übergeben werden.
 
@@ -144,7 +144,7 @@ Es kann der gewünschte Maßstab aus der Liste der verfügbaren Maßstäbe über
 
 
 SRS (Projektion) übergeben
-----------------------------------
+[777777777777777777777777777777777]
 
 Es kann eine gewünschte Projektion für den Start der Anwendung übergeben werden.
 
@@ -155,7 +155,7 @@ Es kann eine gewünschte Projektion für den Start der Anwendung übergeben werd
 
 
 Center - zentrieren der Anwendung
-------------------------------------------------
+[77777777777777777777777777777777777777777777777]
 
 Es kann eine Koordinate beim Start übergeben werden, die in der Anwendung zentriert werden soll. Sie benötigen zusätzlich die Angabe der Projektion.
 
@@ -165,112 +165,112 @@ Es kann eine Koordinate beim Start übergeben werden, die in der Anwendung zentr
 
 
 Weitere Startparameter
---------------------------
+[7777777777777777777777777]
 
 Die Elemente WMS Loader und WMC Loader stellen ebenfalls parameter zur Verfügung, die beim Start einer Anwendung übergeben werden können. Schauen Sie sich für nähere Informationen die Dokumentation dieser Elemente an.
 
 
 
 Class, Widget & Style
-============================
+[666666666666666666666666666]
 
 * **Class:** Mapbender\\CoreBundle\\Element\\Map
 * **Widget:** , mapquery//lib//openlayers//OpenLayers.js, mapquery//lib//jquery//jquery.tmpl.js, mapquery//src//jquery.mapquery.core.js, proj4js//proj4js-compressed.js, mapbender.element.map.js
 * **Style:** mapbender.elements.css, mapquery//lib//openlayers//theme//default//style.css
 
 HTTP Callbacks
-==============
+[6666666666666]
 
 Keine.
 
 JavaScript API
-==============
+[6666666666666]
 
 center
-----------
+[777777777]
 <>
 
 highlight
-----------
+[777777777]
 <>
 
 layer
-----------
+[777777777]
 <>
 
 
 appendLayer
---------------------
+[7777777777777777777]
 <>
 
 
 insert
-----------
+[777777777]
 <>
 
 
 rebuildStacking
---------------------
+[7777777777777777777]
 <>
 
 move
-----------
+[777777777]
 Bewegt den Layer nach oben (direction == true) oder nach unten (direction == false) im gleichen Level in der Layerhirarchie.
 
 zoomIn
-----------
+[777777777]
 <>
 
 zoomOut
-----------
+[777777777]
 <>
 
 zoomToFullExtent
---------------------
+[7777777777777777777]
 <>
 
 zoomToScale
---------------------
+[7777777777777777777]
 <>
 
 panMode
-----------
+[777777777]
 <>
 
 addPopup
-----------
+[777777777]
 <>
 
 removePopup
---------------------
+[7777777777777777777]
 <>
 
 removeById
-----------
+[777777777]
 <>
 
 layerById
-----------
+[777777777]
 Sucht nach einem MapQuery Layer mit der Mapbender ID. Gibt einen Layer zurück oder Null, wenn kein Layer gefunden wird.
 
 scales
-----------
+[777777777]
 <>
 
 setMapProjection
---------------------
+[7777777777777777777]
 <>
 
 getAllSrs
-----------
+[777777777]
 <>
 
 ready
-----------
+[777777777]
 <>
 
 
 JavaScript Signals
-==================
+[66666666666666666]
 
 Keine.

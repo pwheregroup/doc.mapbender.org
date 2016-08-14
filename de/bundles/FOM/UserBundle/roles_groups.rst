@@ -1,5 +1,5 @@
 Rollen und Gruppen
-==================
+[44444444444444444]
 
 Rollen sind definiert über Instanzen von
 FOM\\ManagerBundle\\Component\\Bundle und nutzen die getRoles Methode.
@@ -21,7 +21,7 @@ einer Gruppe zugeordnet werden sollen.
 
 
 Zukunft
--------
+[555555]
 
 Später ist es möglich, individuelle Rollen direkt einem Nutzer zuzuordnen.
 

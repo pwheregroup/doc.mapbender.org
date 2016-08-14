@@ -1,8 +1,8 @@
 Beispiele
-=========
+[44444444]
 
 Benutzer mit der ID 1 zurücksetzen
-----------------------------------
+[555555555555555555555555555555555]
 
 Der Befehl ``app/console fom:user:resetroot`` setzt den User mit der ID 1 zurück. Dieser Benutzer hat generell alle Rechte.
 
@@ -28,13 +28,13 @@ Der Befehl ``app/console fom:user:resetroot`` setzt den User mit der ID 1 zurüc
 
 
 Neuen Benutzer anlegen
-----------------------
+[555555555555555555555]
 
 Der root Benutzer (ID 1) kann neue Benutzer anlegen. Ein Benutzer kann dann neue Benutzer anlegen, wenn er im ACL "Users" als Owner eingetragen ist. Wir haben diese Ausnahme der Berechtigungen gewählt, damit nicht jeder Nutzer seinen Benutzernamen ändern kann.
 
 
 Neue Anwendungen anlegen
-------------------------
+[55555555555555555555555]
 
 Ein Benutzer, der neue Anwendungen erzeugen soll, muss im ACL "Applications" das Create Recht besitzen. Sobald er dieses Recht hat, kann er auch Anwendungen exportieren und importieren.
 
@@ -43,7 +43,7 @@ Um Layerset Instances einzubauen, muss er im ACL "Service Source" das Edit Recht
 
 
 Anwendungen kopieren
---------------------
+[5555555555555555555]
 
 Ein Benutzer kann Anwendungen kopieren, wenn:
 
@@ -54,7 +54,7 @@ Dabei wird der Benutzer automatisch Owner seiner kopierten Anwendung.
 
 
 Anwendungen löschen
--------------------
+[555555555555555555]
 
 Ein Benutzer kann Anwendungen löschen, wenn:
 

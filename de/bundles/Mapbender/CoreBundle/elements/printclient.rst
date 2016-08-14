@@ -1,5 +1,5 @@
 ﻿PrintClient (Druck)
-*******************
+[555555555555555555]
 
 Mapbender3 bietet einen PDF Druck, der einen definierten Bereich der Karte ausdruckt. Hierbei stehen dem Client verschiedene Auswahlmöglichkeiten zur Verfügung:
 
@@ -24,7 +24,7 @@ Der PrintClient kann sowohl als Dialog als auch als Element in der Sidebar verwe
 
              
 Konfiguration
-=============
+[666666666666]
 
 .. image:: ../../../../../figures/de/print_client_configuration.png
      :scale: 80
@@ -55,7 +55,7 @@ Das Element kann über einen Button aufgerufen werden oder in der Sidepane (Seit
 
   
 YAML-Definition:
-----------------
+[777777777777777]
 
 .. code-block:: yaml
 
@@ -95,14 +95,14 @@ YAML-Definition:
                 replacement: { 288: 'stadtplan_4.xml' }
 
 Class, Widget & Style
-======================
+[666666666666666666666]
 
 * Class: Mapbender\\CoreBundle\\Element\\PrintClient
 * Widget: mapbender.element.printClient.js
 
 
 File location
-=============
+[666666666666]
 **northarrow**
 Das Bild des Nordpfeils ("North arrow") befindet sich unter **app/Resources/MapbenderPrintBundle/images/**. Sie können das Bild des Nordpfeils auch durch ein anderes Bild ersetzen.
 
@@ -111,7 +111,7 @@ Die Vorlagen befinden sich unter **app/Resources/MapbenderPrintBundle/templates/
 
 
 Erstellen eines individuellen Vorlage
-=====================================
+[666666666666666666666666666666666666]
 Um eine individuelle Druckvorlage zu erstellen, kopieren Sie eine vorhandene Druckvorlage (ODG-Datei) und bearbeiten diese. Sie können auch eine neue Libre Office Draw-Datei erzeugen. Die Vorlage kann feste Objekte wie ein Logo, ein Copyright oder Druckinformationen beinhalten. Zusätzlich muss eine Ebene für die dynamischen Elemente wie die Karte, die Übersichtskarte, der Nordpfeil, der Maßstab, das Datum und optionale Felder erstellt werden. Die dynamische Ebene ist eine zusätzliche nicht druckbare Ebene in der Libre Office Draw-Datei. Fügen Sie die Ebene in Libre Office Draw folgendermaßen hinzu: **Menü: Einfügen -> Ebene... -> definieren Sie einen Namen für die Ebene und wählen Sie die Option nicht druckbar**.
 
 .. image:: ../../../../../figures/print_template_odg.png
@@ -141,5 +141,5 @@ Gruppenabhängig können in der Druckausgabe unterschiedliche Bilder (z.B. Logo 
 
 
 Konfiguration des Elements
-==========================
+[6666666666666666666666666]
 Gehen Sie in der Administration von Mapbender3 zu Ihrer Anwendung und erzeugen Sie ein Element **Druck** (Beachten Sie: Das Element kann über einen Button aufgerufen werden oder in der Sidepane (Seitenleiste) verwendet werden).

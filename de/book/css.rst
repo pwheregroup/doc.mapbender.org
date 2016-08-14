@@ -1,7 +1,7 @@
 .. _css:
 
 Wie kann der Stil einer Anwendung mit dem css-Editor angepasst werden?
-############################################################################
+[333333333333333333333333333333333333333333333333333333333333333333333333333]
 
 Mapbender3 verfügt ab der Version 3.0.4.0 über einen css-Editor zur Anpassung des Stils (Farben, Größen, Icons, ...) einer Anwendung. Über den Editor können css-Klassen definiert werden, die die Standardklassen überschreiben.
 

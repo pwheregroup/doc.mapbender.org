@@ -1,10 +1,10 @@
 .. _systemrequirements:
 
 Systemvoraussetzungen und Download
-##################################
+[444444444444444444444444444444444]
 
 Systemvoraussetzungen
-***************
+[55555555555555]
 
 Mapbender3 benötigt die folgenden Komponenten:
 
@@ -25,7 +25,7 @@ Beachten Sie, dass die SQLite Erweiterung auf jeden Fall benötigt wird. Sie ben
 
 
 Systemvoraussetzungen Windows
-******************************
+[55555555555555555555555555555]
 
 Auch unter Windows benötigen Sie `PHP <http://www.php.net/>`_ und damit einen PHP-fähigen Webserver wie `Apache <http://httpd.apache.org/>`_.
 
@@ -38,7 +38,7 @@ Wir haben gute Erfahrungen mit den 64-bit Downloads von Apache und PHP gemacht.
 
 
 Anmerkungen zu Windows
-----------------------
+[666666666666666666666]
 
 Die Apache Downloads unterscheiden sich nach der Version von Visual Studio, mit der sie kompiliert worden sind und damit nach der geeigneten Version der Microsoft Visual C++ Redistributable. Bei neueren Windows Versionen ist das in der Regel unproblematisch. Es gibt drei unterschiedliche Varianten:
 
@@ -51,7 +51,7 @@ Zusätzlich gibt es 32- und 64-bit Versionen von Apache für Windows.
 
 
 Download von Mapbender3
-***********************
+[5555555555555555555555]
 
 Installationspakete von Mapbender3 werden als komprimierte Pakete ausgegeben und sind auf der Download-Seite verfügbar unter http://mapbender3.org/download.
 
@@ -71,7 +71,7 @@ Für den schnellen Test können Sie auch die `Installation im Symfony eigenen We
 
 
 Verzeichnisstruktur
--------------------
+[666666666666666666]
 
 Nach dem Entpacken des TAR.GZ- bzw des ZIP-Archivs finden Sie in dem Mapbender-Verzeichnis folgende Unterverzeichnisse:
 

@@ -1,7 +1,7 @@
 .. _overview:
 
 Overview (Übersicht)
-***********************
+[5555555555555555555555]
 
 Mit diesem Element kann eine Übersichtskarte erstellt werden, ähnlich wie in OpenLayers.
 Es kann die Größe des Übersichtsfensters und die Position bestimmt werden. In der Übersicht wird ein vorher definiertes Layerset angezeigt.
@@ -13,7 +13,7 @@ Es kann auch definiert werden, ob die Übersichtskarte nach dem Öffnen der Appl
      :scale: 80
 
 Konfiguration
-=============
+[666666666666]
 
 .. image:: ../../../../../figures/de/overview_configuration.png
      :scale: 80
@@ -46,23 +46,23 @@ YAML-Definition:
    fixed: true                      # true/false um den Übersichtsbereich zu fixieren, der Standardwert ist true
 
 Class, Widget & Style
-============================
+[666666666666666666666666666]
 
 * **Class:** Mapbender\\CoreBundle\\Element\\Overview
 * **Widget:** mapbender.element.overview.js
 * **Style:** mapbender.element.overview.css
 
 HTTP Callbacks
-==============
+[6666666666666]
 
 Keine.
 
 JavaScript API
-==============
+[6666666666666]
 
 Keine.
 
 JavaScript Signals
-==================
+[66666666666666666]
 
 Keine.

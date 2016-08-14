@@ -1,7 +1,7 @@
 .. _imageexport:
 
 ImageExport (Bildexport)
-************************
+[55555555555555555555555]
 
 Mit dem  Bildexport kann die aktuelle Kartenansicht exportiert werden. Das Bild kann als png oder jpeg abgespeichert werden.
 
@@ -9,7 +9,7 @@ Mit dem  Bildexport kann die aktuelle Kartenansicht exportiert werden. Das Bild 
      :scale: 80
 
 Konfiguration
-=============
+[666666666666]
 
 .. image:: ../../../../../figures/de/image_export_configuration.png
      :scale: 80
@@ -18,7 +18,7 @@ Konfiguration
 * **Target:** ID des Kartenelements, auf das sich das Element bezieht.
 
 YAML-Definition:
-----------------
+[777777777777777]
 
 .. code-block:: yaml
 
@@ -28,22 +28,22 @@ Für das Element wird ein Button verwendet. Zu der Konfiguration des Buttons bes
 
 
 Class, Widget & Style
-=====================
+[66666666666666666666]
 
 * **Class:** Mapbender\\PrintBundle\\Element\\ImageExport
 * **Widget:** mapbender.element.imageExport.js
 
 HTTP Callbacks
-==============
+[6666666666666]
 
 Keine.
 
 JavaScript API
-==============
+[6666666666666]
 
 Keine.
 
 JavaScript Signals
-==================
+[66666666666666666]
 
 Keine.

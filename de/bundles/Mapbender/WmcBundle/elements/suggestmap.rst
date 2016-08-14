@@ -1,7 +1,7 @@
 .. _suggestmap:
 
 Suggest Map
-***********************
+[5555555555555555555555]
 
 
 **Beachten Sie:** Diese Funktion kann nur verwendet werden, wenn ein `WMC Editor <../elements/wmc_editor.html>`_ vorhanden ist.
@@ -12,7 +12,7 @@ Suggest Map
      :scale: 80
 
 Konfiguration
-=============
+[666666666666]
 
 .. image:: ../../../../../figures/suggestmap_configuration.png
      :scale: 80
@@ -38,7 +38,7 @@ YAML-Definition:
 Für das Element wird ein Button benötigt. Siehe unter :ref:`button_de` für die Konfiguration.
 
 Class, Widget & Style
-==============
+[6666666666666]
 
 * **Class:** Mapbender\\WmcBundle\\Element\\SuggestMap
 * **Widget:** <Put Widget name here>
@@ -46,26 +46,26 @@ Class, Widget & Style
 
 
 HTTP Callbacks
-==============
+[6666666666666]
 
 
 <action>
---------------------------------
+[7777777777777777777777777777777]
 
 
 
 JavaScript API
-==============
+[6666666666666]
 
 
 <function>
-----------
+[777777777]
 
 
 JavaScript Signals
-==================
+[66666666666666666]
 
 <signal>
---------
+[7777777]
 
 

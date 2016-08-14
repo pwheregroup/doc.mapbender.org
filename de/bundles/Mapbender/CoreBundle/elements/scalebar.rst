@@ -1,7 +1,7 @@
 .. _scalebar:
 
 ScaleBar (Maßstabsleiste)
-**************************
+[5555555555555555555555555]
 
 Die Maßstabsleiste ist eine schmale Linie, die den aktuellen Maßstab anzeigt.
 
@@ -9,7 +9,7 @@ Die Maßstabsleiste ist eine schmale Linie, die den aktuellen Maßstab anzeigt.
      :scale: 100
 
 Konfiguration
-=============
+[666666666666]
 
 .. image:: ../../../../../figures/de/scalebar_configuration.png
      :scale: 80
@@ -37,23 +37,23 @@ YAML-Definition:
    units: array('km')               # Einheiten des Maßstabsbalkens, 'kilometer' und/oder 'miles' (ml), Standard ist ['km']
 
 Class, Widget & Style
-============================
+[666666666666666666666666666]
 
 * **Class:** Mapbender\\CoreBundle\\Element\\ScaleBar
 * **Widget:** mapbender.element.scalebar.js
 * **Style:** mapbender.element.scalebar.css
 
 HTTP Callbacks
-==============
+[6666666666666]
 
 Keine.
 
 JavaScript API
-==============
+[6666666666666]
 
 Keine.
 
 JavaScript Signals
-==================
+[66666666666666666]
 
 Keine.

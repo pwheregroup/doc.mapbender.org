@@ -1,7 +1,7 @@
 .. _html:
 
 HTML-Element
-************
+[55555555555]
 
 Über das HTML-Element kann generisches HTML an einer beliebigen Stelle in der Anwendung definiert werden.
 Im generischen HTML stehen zur Verfügung folgende Variablen: "application" (Entity Application), "entity" (Entity HTMLElement) und "configuration". Damit kann beispielsweise ein Bild in die Anwendung eingefügt werden. 
@@ -11,7 +11,7 @@ Im generischen HTML stehen zur Verfügung folgende Variablen: "application" (Ent
 
 
 Configuration
-=============
+[666666666666]
 
 Einfügen eines Bildes in Ihre Anwendung:
 
@@ -38,29 +38,29 @@ YAML-Definition:
    
 
 Class, Widget & Style
-============================
+[666666666666666666666666666]
 
 * **Class:** Mapbender\\CoreBundle\\Element\\HTMLElement
 * **Widget:** mapbender.mbHTMLElement
 
 HTTP Callbacks
-==============
+[6666666666666]
 
 None.
 
 JavaScript API
-==============
+[6666666666666]
 
 None.
 
 JavaScript Signals
-==================
+[66666666666666666]
 
 None.
 
 
 Beispiele
-==================
+[66666666666666666]
 
 Einfügen eines Bildes
 

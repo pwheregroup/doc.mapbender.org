@@ -1,5 +1,5 @@
 mapbender - Mapbender\\CoreBundle\\Mapbender
-############################################
+[5555555555555555555555555555555555555555555]
 
 Der Mapbender Service ist ein zentraler Service, der Applikationen und deren Entitäten abruft.
 

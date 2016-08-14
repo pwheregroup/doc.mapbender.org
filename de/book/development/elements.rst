@@ -1,16 +1,16 @@
 Elemente verstehen
-##################
+[55555555555555555]
 
 Bereiche der Elemente
-**********************
+[666666666666666666666]
 
 PHP Class
-+++++++++
+[77777777]
 
 TODO
 
 Twig Template
-+++++++++++++
+[777777777777]
 
 Jedes Element benötigt ein HTML-Element. In den meisten Fällen kann das ein DIV-Element sein, aber es kann auch komplexer sein.
 
@@ -27,7 +27,7 @@ Mehrere Angaben müssen gesetzt werden:
 * spezielle Klasse für das Element
 
 JavaScript Widgets
-++++++++++++++++++
+[77777777777777777]
 
 Element Widgets werden unter Verwendung der jQuery UI `widget factory <http://wiki.jqueryui.com/w/page/12138135/Widget%20factory>`_ erzeugt.
 Dies gewährleistet eine einheitliche Struktur für die Widget-Entwicklung und bietet:
@@ -107,7 +107,7 @@ Für das Event Handling wird jQuery.proxy verwendet, um sicherzustellen, dass ei
 In diesem Fall ist "this" innerhalb der clickCallback Methode das This, das als der zweite Parameter übergeben wird (in der Regel die Widget Instanz) und nicht das HTML-Element, das das Event angestoßen hat.
 
 Kommunikation zwischen Elementen
-********************************
+[6666666666666666666666666666666]
 
 Es gibt eine aktive und passive Kommunikation zwischen den Widgets. Die aktive Kommunikation, wird genutzt, um eine öffentliche Methode eines anderen Widget abzurufen. Dazu selektieren Sie das HTML-Element des Widgets mit jQuery und rufen die Methode folgendermaßen auf:
 

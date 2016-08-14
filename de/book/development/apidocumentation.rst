@@ -1,12 +1,12 @@
 API-Dokumentation
-#################
+[5555555555555555]
 
 Die Mapbender3 API Dokumentation findet sich unter http://api.mapbender3.org/.
 
 
 
 Wie wird die Mapbender3 API Dokumentation erstellt?
-****************************************************
+[666666666666666666666666666666666666666666666666666]
 
 PHP
 ***
@@ -21,6 +21,6 @@ Schauen Sie sich die Dokumentationsblöcke in der `Example.php <https://github.c
 
 
 JavaScript
-**********
+[666666666]
 
 Bisher wurden keine guten Tools gefunden.

@@ -1,7 +1,7 @@
 .. _zoom_bar:
 
 Navigation Toolbar (Zoombar) (Navigationswerkzeug)
-*********************************************************************
+[55555555555555555555555555555555555555555555555555555555555555555555]
 
 Das Navigationswerkzeug bietet die Funktionen Zoomen und Verschieben an, ähnlich wie bei OpenLayers.
 
@@ -9,7 +9,7 @@ Das Navigationswerkzeug bietet die Funktionen Zoomen und Verschieben an, ähnlic
      :scale: 80
 
 Konfiguration
-=============
+[666666666666]
 
 .. image:: ../../../../../figures/de/zoom_bar_configuration.png
      :scale: 80
@@ -42,23 +42,23 @@ YAML-Definition:
    draggable: true               # das Navigationswerkzeug ist verschiebbar oder nicht, Standard ist true
 
 Class, Widget & Style
-============================
+[666666666666666666666666666]
 
 * **Class:** Mapbender\\CoreBundle\\Element\\ZoomBar
 * **Widget:** mapbender.element.zoombar.js
 * **Style:** mapbender.element.zoombar.css
 
 HTTP Callbacks
-==============
+[6666666666666]
 
 Keine.
 
 JavaScript API
-==============
+[6666666666666]
 
 Keine.
 
 JavaScript Signals
-==================
+[66666666666666666]
 
 Keine.

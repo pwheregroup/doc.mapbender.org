@@ -1,7 +1,7 @@
 .. _wmc_loader:
 
 WMC Loader (WMC laden)
-***********************
+[5555555555555555555555]
 
 Mapbender kann Konfigurationen speichern. Mehr dazu unter `WMC Editor <../elements/wmc_editor.html>`_. Diese Konfigurationen  mit dem Element WMC-Lader geladen werden. 
 
@@ -13,7 +13,7 @@ Wenn Sie eine Konfiguration auswählen, werden die Dienste der Konfiguration in 
      :scale: 80
 
 Konfiguration
-=============
+[666666666666]
 
 .. image:: ../../../../../figures/wmc_loader_configuration.png
      :scale: 80
@@ -59,7 +59,7 @@ Das Element kann als Selektbox oder als Dialog konfiguriert werden. Wenn das Ele
      
 
 Class, Widget & Style
-==============
+[6666666666666]
 
 * **Class:** Mapbender\\WmcBundle\\Element\\WmcLoader
 * **Widget:** <Put Widget name here>
@@ -67,34 +67,34 @@ Class, Widget & Style
 
 
 HTTP Callbacks
-==============
+[6666666666666]
 
 
 <action>
---------------------------------
+[7777777777777777777777777777777]
 
 
 
 JavaScript API
-==============
+[6666666666666]
 
 
 <function>
-----------
+[777777777]
 
 
 JavaScript Signals
-==================
+[66666666666666666]
 
 <signal>
---------
+[7777777]
 
 
 Kontrolle über den Aufruf
-=====================================
+[666666666666666666666666666666666666]
 
 WMC per ID laden
-------------------
+[77777777777777777]
 
 Im Element WMC Loader muss die Option *Id Loader* aktiviert sein, um das Laden eines WMCs über die URL zu erlauben.
 
