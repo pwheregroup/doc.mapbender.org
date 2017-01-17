@@ -3,7 +3,7 @@
 
 Mapbender3 bietet einen PDF Druck, der einen definierten Bereich der Karte ausdruckt. Hierbei stehen dem Client verschiedene Auswahlmöglichkeiten zur Verfügung:
 
- * Auswahl Maßstab,
+ * Auswahl Maßstab, 
  * Auswahl Qualität,
  * Drehung des Ausschnitts,
  * Ausdruck Legende.
@@ -144,6 +144,24 @@ Exportieren Sie die Vorlage als PDF unter dem gleichen Namen wie die ODG-Datei. 
 Das Druck-Skript liest die Informationen (Position, Größe, Schriftgröße, Ausrichtung) aus der ODG-Datei aus und verwendet ebenfalls das PDF-Dokument mit den festen Objekten. Aus beiden und den aktuellen Karten wird dann eine PDF-Druckdatei erstellt.
 
 Gruppenabhängig können in der Druckausgabe unterschiedliche Bilder (z.B. Logo der Gemeinde) ausgegeben werden. Hierzu gibt es die Platzhalter dynamisches Bild und dynamischer Text. Sofern diese Bereiche im Drucklayout vorliegen wird nach einem Bild mit dem Namen der Gruppe gesucht und dieses im Bereich dynamic_image ausgegeben. Hierbei wird die Höhe zur Orientierung verwendet und die Breite entsprechend angepasst. Unter dynamic_text wird die Beschreibung der Gruppe ausgegeben.
+
+** Druck von Elementen vor dem Kartenbild **
+
+Damit beim Druck der Kartenbereich möglichst groß ist und wenig Platz durch weiße/ leere Bereiche verloren geht können Elemente vor das Kartenbild gelegt werden. Besonders hilfreich ist dies vorallem bei großen Druckformaten, wie DinA1, die einen verhältnissmäßig breiten weißen Rand aufweisen. 
+
+Für die Nutzung dieser Funktion müssen die Templates angepasst werden und transparente PDF-Vorlagen erzeugt werden. 
+
+Templates anpassen: 
+* Elemente neu anordnen, am besten vor weißem Hintergrund
+** Anordnung der Elemente im Vordergrund
+*** Rechtsklick Anordnen -> Ganz nach vorne
+** Anordnung Karte = ganz nach hinten
+*** Rechtsklick Anordnen -> Ganz nach hinten
+* Alles selektieren 
+** Strg + A drücken
+* Selektion als PDF drucken
+** Exportieren als PDF
+** Bereich Auswahl statt Alle
 
 
 Konfiguration des Elements
