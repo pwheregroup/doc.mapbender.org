@@ -17,7 +17,7 @@ Layer-instances contain the options how a WMS is called: image-format, info-form
 Further information
 -------------------
 
-* You can find information about using layersets in the `_Instancesets <../../../../bundles/Mapbender/CoreBundle/entities/instancesets.html>`_ and the `Quickstart documentation <../../../../book/quickstart.html#configure-your-wms>`_.
+* You can find information about using layersets in the `Instancesets <../../../../bundles/Mapbender/CoreBundle/entities/instancesets.html>`_ and the `Quickstart documentation <../../../../book/quickstart.html#configure-your-wms>`_.
 
 * The relevance of layersets for the display in the layertree is described in the Thematic Layers section of the `layertree documentation <../elements/layertree.html>`_
 
