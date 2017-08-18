@@ -4,14 +4,14 @@ Sie können die Dienste Ihrer Anwendung konfigurieren. Dies ist sinnvoll, wenn S
 
 #. Wählen Sie  ``Anwendung -->`` |mapbender3-button-edit| ``Editier-Button --> Layerset --> Editier-Button``, um eine Instanz zu konfigurieren.
 
-#. Im oberen Bereich der Seite können Sie die allgemeinen Informationen des Dienstes konfigurieren. Die Erklärung der einzelnen Begrifflichkeiten folgt unter `Dienstekonfiguration`_.
+#. Im oberen Bereich der Seite können Sie die allgemeinen Informationen des Dienstes konfigurieren. Die Erklärung der einzelnen Begrifflichkeiten folgt im Kapitel Dienstekonfiguration.
 
 #. Im unteren Bereich der Seite sehen Sie eine Tabelle mit den Layern des Dienstes.
 
 #. Sie können die Reihenfolge der Layer per Drag & Drop verändern.
 
 
-.. image:: ../../figures/mapbender3_wms_application_settings.png
+.. image:: ../../../../../figures/mapbender3_wms_application_settings.png
 
 
 **Dienstekonfiguration:**
@@ -43,7 +43,7 @@ hängen. Es können auch feste Werte übermittelt werden.
 Das folgende Beispiel zeigt die Definition eines Parameters „group“, der als
 Inhalt die Gruppe des gerade in Mapbender angemeldeten Nutzers weitergibt.
 
-.. image:: ../../figures/mapbender3_vendor_specific_parameter.png
+.. image:: ../../../../../figures/mapbender3_vendor_specific_parameter.png
 
 * Type: „single“, „multiple“, „interval“ (multiple Values in Dimensions)
 * Name: Parameter Name im WMS Request.
