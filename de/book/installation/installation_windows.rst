@@ -3,11 +3,11 @@
 Installation auf Windows
 ########################
 
-Beachten Sie die `Systemvoraussetzungen <systemrequirements.html>`_ wo Sie auch die Download-Links für Mapbender3 finden. Installieren Sie die notwendigen Komponenten:
+Bitte beachten Sie die `Systemvoraussetzungen <systemrequirements.html>`_, unter denen Sie auch die Download-Links für Mapbender3 finden. Installieren Sie alle notwendigen Komponenten.
 
-* fügen Sie den Pfad zum PHP-bin Verzeichnis zu Ihrer PATH Variable hinzu 
-* aktivieren Sie die PHP Erweiterungen in der php.ini Konfigurationsdatei
-* laden Sie das Apache Modul rewrite
+* Fügen Sie den Pfad zum PHP-bin - Verzeichnis zu Ihrer PATH Variable hinzu. 
+* Aktivieren Sie die PHP Erweiterungen in der php.ini - Konfigurationsdatei.
+* Laden Sie das Apache - Modul rewrite.
 
 .. code-block:: ini
 
@@ -21,6 +21,7 @@ Beachten Sie die `Systemvoraussetzungen <systemrequirements.html>`_ wo Sie auch 
  extension=php_pgsql.dll
  extension=php_openssl.dll
  extension=php_mbstring.dll
+
 
 
 Für die Entwicklung:
@@ -39,16 +40,17 @@ Zusätzlich für PHP 7:
  extension=php_zip.dll
  extension=php_bz2.dll
   
+Beachten Sie, dass php_pgsql ab PHP 7.0 als veraltet gilt. Sie sollten deshalb ab dieser Version auf php_pdo_pgsql erweitern.
 
 .. code-block:: apache
 
     # unter Windows Datei httpd.conf (Kommentar # entfernen) und Apache neu starten
     LoadModule rewrite_module modules/mod_rewrite.so
 
-Erstellen Sie den Apache Alias. Es gibt für Windows mehrere Möglichkeiten. Eine übersichtliche Möglichkeit ist, eine Datei mapbender3.conf zu erstellen und auf diese in der httpd.conf zu verweisen.
+Erstellen Sie den Apache Alias. Hierfür gibt es unter Windows mehrere Möglichkeiten. Eine übersichtliche Möglichkeit ist, eine Datei mapbender3.conf zu erstellen und auf diese in der httpd.conf zu verweisen.
 
 * Erstellen Sie einen Unterordner "alias" im Verzeichnis <apache>/conf. Legen Sie die Datei mapbender3.conf dort ab. (Dieses Verzeichnis können Sie dann auch nutzen, um dort weitere Alias-Definitionen übersichtlich abzulegen.)
-* Verweisen Sie in der Datei httpd.conf (im Verzeichnis <apache>/conf/) auf diese Datei mapbender3.conf.
+* Verweisen Sie in der Datei httpd.conf (im Verzeichnis <apache>/conf/) auf die Datei mapbender3.conf.
 
 In der httpd.conf:
 
@@ -73,9 +75,9 @@ In der mapbender3.conf:
   RewriteRule ^(.*)$ app.php [QSA,L]
  </Directory>
 
-Wir gehen in diesem Beispiel davon aus, dass Mapbender3 direkt unter **C:/** entpackt wurde (siehe das Kapitel `Systemvoraussetzungen und den Download <systemrequirements.html#download-von-mapbender3>`_ für Details). Sie können auch einfach ein anderes Verzeichnis wählen. Passen Sie dann nur diese Apache mapbender3.conf Datei oben an, indem Sie auf das richtige Verzeichnis verweisen.
+Wir gehen in diesem Beispiel davon aus, dass Mapbender3 direkt unter **C:/** entpackt wurde (siehe das Kapitel `Systemvoraussetzungen und den Download <systemrequirements.html#download-von-mapbender3>`_ für Details). Sie können auch einfach ein anderes Verzeichnis wählen. Falls Sie dies tun, muss die Apache mapbender3.conf Datei entsprechend angepasst werden, indem Sie auf das von Ihnen gewählte Verzeichnis verweisen.
 
-Starten Sie den Apache Webserver neu.
+Starten Sie anschließend den Apache Webserver neu.
 
 
 Optionale Features
@@ -84,10 +86,17 @@ Optionale Features
 Mit den folgenden Schritten kann die Performance unter Windows gesteigert werden.
 
 
+Anpassung von php.ini Einstellungen
+-----------------------------------
+
+Die aktuell empfohlenen Werteeinstellungen der php-Dokumentation sollten eingehalten werden. Klicken Sie dazu auf den Link, und sehen Sie sich die aktuellen Einstellungen unter "Recommended php.ini settings" an.
+http://php.net/manual/de/opcache.installation.php
+
+
 SASS Compiler
 -------------
 
-Der SASS Compiler ist Bestandteil von Mapbender 3.0.5 und seit Version 3.0.6.0 sorgt ein Filter dafür, dass die generierten CSS Anweisungen in eine temporäre Datei abgelagert und nicht in einer Pipe ausgeliefert werden.
+Der SASS Compiler ist Bestandteil von Mapbender 3.0.5. Seit Version 3.0.6.0 sorgt ein Filter dafür, dass die generierten CSS Anweisungen in eine temporäre Datei abgelagert und nicht in einer Pipe ausgeliefert werden.
 
 
 
@@ -185,9 +194,9 @@ Informationen dazu unter:
 OpCache (optional)
 ------------------
 
-OpCache ist eine PHP-Erweiterung, die seit PHP >= 5.5.5 zwar ausgelifert, aber per Voreinstellung nicht freigeschaltet ist.
+OpCache ist eine PHP-Erweiterung, die seit PHP >= 5.5.5 zwar ausgeliefert, aber per Voreinstellung nicht freigeschaltet ist. Sie beschleunigt die Reaktionszeit von Mapbender3.
 
-Mehr info: https://www.sitepoint.com/understanding-opcache/
+Mehr Infos: https://www.sitepoint.com/understanding-opcache/
 
 
 **OPcache Installation**
@@ -220,7 +229,7 @@ In der php.ini:
                 opcache.max_wasted_percentage=5
                 
 Symfony empfiehlt, den **opcache.max_accelerated_files** Wert höher zu setzen: http://symfony.com/doc/3.1/performance.html#optimizing-all-the-files-used-by-symfony
-
+Diese Dokumentationsseite von PHP gibt Ihnen eine Empfehlung, welche Cache-Variante Sie unter bestimmten Windows-Voraussetzungen hinzufügen sollten: http://php.net/manual/de/install.windows.recommended.php
 
 
 Überprüfung

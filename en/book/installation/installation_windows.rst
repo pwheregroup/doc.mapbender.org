@@ -40,6 +40,7 @@ Additional for PHP 7:
  extension=php_zip.dll
  extension=php_bz2.dll
   
+Please notice that php_pgsql is stated deprecated since PHP 7.0. If you run this version, you should update to php_pdo_pgsql.
 
 .. code-block:: apache
 
@@ -85,6 +86,11 @@ Optional features
 
 The following steps may lead to a better performance under some Windows installations.
 
+
+Adjusting the php.ini - file
+----------------------------
+
+For an adequate performance boost, it is always recommended to keep the php.ini file up-to-date. For that, visit http://php.net/manual/de/opcache.installation.php and check the settings under "Recommended php.ini settings".
 
 SASS Compiler
 -------------
@@ -218,8 +224,8 @@ In php.ini:
                 opcache.max_wasted_percentage=5
 
 Symfony recommends, to increase the **opcache.max_accelerated_files** value: http://symfony.com/doc/3.1/performance.html#optimizing-all-the-files-used-by-symfony
+The following php website recommends a setting for individual cases:  http://php.net/manual/de/install.windows.recommended.php
 
-                
 
 Check
 =====

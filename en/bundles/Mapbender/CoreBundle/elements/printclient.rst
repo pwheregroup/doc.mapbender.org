@@ -110,6 +110,7 @@ You find the print templates at **app/Resources/MapbenderPrintBundle/templates/*
 
 Create your individual templates
 ================================
+Please notice that you need to install LibreOffice (even if you run Windows). It is mandatory to create and adjust the print template odg-files.
 To create an individual print template use an existing print template odg-file or create a new LibreOffice Draw file. Your template can have fixed objects like your logo, copyright or print information. In addition you have to create a layer for the dynamic elements like map, overview, northarrow, scale, date and optional fields. The dynamic layer is an additional non printable layer in your LibreOffice Draw file. Add this layer with **Menu -> Add -> Layer -> define a name for the layer and choose the option not printable**.
 
 .. image:: ../../../../../figures/print_template_odg.png

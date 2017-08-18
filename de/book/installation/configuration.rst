@@ -18,9 +18,9 @@ Im Folgenden werden die für die Mapbender3-Installation aufgeführten Konfigura
 
 Diese Schritte werden mit dem console-Hilfsprogramm des `Symfony <http://symfony.com/>`_ Frameworks durchgeführt, auf dem Mapbender3 aufbaut. Hier noch ein wichtiger Hinweis, bevor Sie fortfahren: 
 
-  | Das console-Hilfsprogramm wird Dateien in die Verzeichnisse app/cache und app/logs schreiben. Für diese Operationen werden die Benutzerrechte des Benutzers benötigt, mit dem Sie angemeldet sind. Sie benötigen ebenfalls Benutzerrechte für das Verzeichnis app/db und die SQLite Datenbank.  Wenn Sie die Applikation in Ihrem Browser öffnen, wird der Server-PHP- Prozess versuchen, auf  diese Dateien zuzugreifen oder in die Verzeichnisse zu schreiben mit anderen Benutzerrechten. Stellen Sie sicher,  dass Sie den Verzeichnissen und Dateien Schreib- und Leserechte zugewiesen haben. 
+  | Das console-Hilfsprogramm wird Dateien in die Verzeichnisse app/cache und app/logs schreiben. Für diese Operationen werden die Benutzerrechte des Benutzers benötigt, mit dem Sie angemeldet sind. Sie benötigen ebenfalls Benutzerrechte für das Verzeichnis app/db und die SQLite Datenbank.  Wenn Sie die Applikation in Ihrem Browser öffnen, wird der Server-PHP-Prozess versuchen, auf diese Dateien zuzugreifen oder in die Verzeichnisse zu schreiben mit anderen Benutzerrechten. Stellen Sie sicher, dass Sie den Verzeichnissen und Dateien Schreib- und Leserechte zugewiesen haben. 
 
-**Wichtiger Hinweis:** Die folgenden app/console Schritte gehen davon aus dass Sie sich oberhalb des app-Verzeichnisses befinden (für die git-Installation bedeutet das mapbender3/application/ andernfalls mapbender3/).
+**Wichtiger Hinweis:** Die folgenden app/console Schritte gehen davon aus, dass Sie sich oberhalb des app-Verzeichnisses befinden (für die git-Installation bedeutet das mapbender3/application/ andernfalls mapbender3/).
 
 .. code-block:: yaml
 
@@ -125,6 +125,58 @@ Sie können die Anwendungen, die in der mapbender.yml definiert sind, in die Dat
     app/console doctrine:fixtures:load --fixtures=./mapbender/src/Mapbender/CoreBundle/DataFixtures/ORM/Application/ --append
 
 
+Starten des Webservers
+^^^^^^^^^^^^^^^^^^^^^^
+
+Über folgende Befehle starten sie den eingebauten Webserver über die Kommandozeile. Der Server lauscht üblicherweise auf localhost:8000. Im Anschluss können sie Mapbender3 im Browser aufrufen, indem sie "localhost:8000" in die Adressleiste eingeben:
+
+.. code-block:: yaml
+
+	app/console server:run
+
+Dieser Befehl startet den Server und blockiert das aktivierte Terminal für weitere Prozesse. Beenden Sie den Webserver mit Strg+C.
+Wollen Sie stattdessen den Webserver im Hintergrund starten, verwenden Sie folgenden Befehl:
+
+.. code-block:: yaml
+
+	app/console server:start
+
+
+Status des Webservers prüfen
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+
+Sobald der Server im Hintergrund läuft, können Sie weitere Aktivitäten in der Kommandozeile vornehmen. Unter bestimmten Umständen kann jedoch eine Statusabfrage des Servers nützlich sein. Tippen Sie dazu auf der Konsole folgenden Befehl ein und überprüfen Sie über die Ausgabe den Status des Webservers:
+
+.. code-block:: yaml
+
+	app/console server:status
+
+Stoppen des Webservers
+^^^^^^^^^^^^^^^^^^^^^^
+
+Wenn der Webserver im Hintergrund läuft, können Sie ihn nicht über Strg+C stoppen. Tippen Sie stattdessen folgenden Befehl in die Kommandozeile ein:
+
+.. code-block:: yaml
+
+	app/console server:stop
+
+Für tiefergreifende Informationen bezüglich des Webservers wird an dieser Stelle auf die Symfony-Dokumentationsseite verwiesen: https://symfony.com/doc/2.3/cookbook/web_server/built_in.html.
+
+Löschen des Caches
+^^^^^^^^^^^^^^^^^^
+
+Besonders in Entwicklungs-bzw. Testingumgebungen ist unter bestimmten Umständen ein Löschen des Caches notwendig. Dies können Sie über den folgenden Konsolenbefehl erreichen:
+
+.. code-block:: yaml
+
+	app/console cache:clear
+	
+Alternativ können Sie alle Daten innerhalb des Mapbender3-Cacheverzeichnisses mithilfe des folgenden Befehls entfernen:
+
+..code-block:: yaml
+
+	rm -rf app/cache/*
+
 
 
 Konfigurationsdateien
@@ -138,15 +190,16 @@ Die Konfigurationsdatei **app/config/config.yml** stellt weitere Parameter berei
 parameters.yml
 ^^^^^^^^^^^^^^
 
-* Datenbank: Parameter, die mit **database** beginnen, definieren die Databankverbindung. 
-* Mailer: Die Mailerangaben starten mit **mailer**. Nutzen Sie z.B. smtp oder sendmail. 
-* Spracheinstellung: Sie können eine Sprache (locale) für Ihre Anwendung angeben (Standardwert ist en, de ist verfügbar). Unter http://doc.mapbender3.org/en/book/translation.html erfahren Sie mehr über die Anpassung von Übersetzungen und wie neue Sprachen hinzugefügt werden können.
+* Datenbank: Parameter, die mit **database** beginnen, definieren die Datenbankverbindung.
+ 
+* Mailer: Die Mailerangaben starten mit **mailer**. Nutzen Sie z.B. smtp oder sendmail.
 
-**Hinweis:** Sie benötigen einen Mailer, wenn Sie die Selbstregistrierung und das Paßwortsetzen nutzen möchten.
+**Hinweis:** Sie benötigen einen Mailer, wenn Sie die Selbstregistrierung und das Passwortsetzen unter "Passwort vergessen?" im Anmeldebereich nutzen möchten. Die Tilde gibt dabei die in der Datenbank definierten Standardwerte zurück.
 
-Sofern Sie einen Proxy verwenden, müssen Sie diesen in der Datei parameters.yml im Bereich *OWSProxy Configuration* angeben.
+* Sofern Sie einen Proxy verwenden, müssen Sie diesen in der Datei parameters.yml im Bereich *OWSProxy Configuration* angeben.
 
 Eine Konfiguration könnte wie folgt aussehen:
+
 
 .. code-block:: yaml
 
@@ -161,12 +214,34 @@ Eine Konfiguration könnte wie folgt aussehen:
         ows_proxy3_password: ~
         ows_proxy3_noproxy:
             - 192.168.1.123
+                
+* Spracheinstellung: Sie können eine Sprache (locale) für Ihre Anwendung angeben. Folgende Sprachcodes sind dabei verfügbar:
+
+* en für Englisch (Standard),
+* de für Deutsch,
+* es für Spanisch,
+* it für Italienisch,
+* nl für Niederländisch,
+* pt für Portugiesisch,
+* ru für Russisch.
+
+Unter http://doc.mapbender3.org/en/book/translation.html erfahren Sie mehr über die Anpassung von Übersetzungen und wie neue Sprachen hinzugefügt werden können.
+
+* Logo: Sie können ein beliebiges Logo statt des Standard-Mapbender3-Logos in die Software einsetzen. Dafür müssen Sie unter server_logo des folgenden Coding-Bereichs Ihr gewünschtes Logo unter dem genannten Pfad ablegen.
+
+.. code-block:: yaml
+
+   fom:
+        server_name:   Mapbender3
+        server_version: 3.0.7
+        server_logo:   bundles/mapbendercore/image/logo_mb3.png
+        
 
 config.yml
 ^^^^^^^^^^
 
-* fom_user.selfregistration: Um die Selbstregistrierung zu de/aktivieren, passen Sie den fom_user.selfregistration Parameter an. Sie müssen unter self_registration_groups eine/mehrere Gruppen angeeben, so dass selbstregistriere Anwender automatisch (bei der Registrierung) diesen Gruppen zugewiesen werden. Über die Gruppe bekommen Sie dann entsprechend Rechte zugewiesen.
-* fom_user.reset_password: Über diesen Parameter kann die Möglichkeit de/aktiviert werden, das Passwort neu zu setzen.
+* fom_user.selfregistration: Um die Selbstregistrierung zu de-/aktivieren, passen Sie den fom_user.selfregistration Parameter an. Sie müssen unter self_registration_groups eine/mehrere Gruppen angeeben, so dass selbstregistriere Anwender automatisch (bei der Registrierung) diesen Gruppen zugewiesen werden. Über die Gruppe bekommen Sie dann entsprechend Rechte zugewiesen.
+* fom_user.reset_password: Über diesen Parameter kann die Möglichkeit de-/aktiviert werden, das Passwort neu zu setzen.
 * framework.session.cookie_httponly: Stellen Sie für HTTP-only session cookies sicher, dass der Parameter framework.session.cookie_httponly auf true steht.
 
 **Hinweis:** Sie benötigen einen Mailer, wenn Sie die Selbstregistrierung und das Paßwortsetzen nutzen möchten.

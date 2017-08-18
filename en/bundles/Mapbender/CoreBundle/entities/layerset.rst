@@ -8,7 +8,7 @@ Layersets are logical containers, that can contain one or more layerset-instance
 .. image:: ../../../../../figures/mapbender3_service_edit.png
            :scale: 80
 
-Layer-instances contain the options how a WMS is called: image-format, info-format, exception-format, scales for the different layers and many more.
+Layer-instances contain the options how a WMS is called: image-format, info-format, exception-format, scales for the different layers and many more. Several user-visibility keywords are available in the "Vendor specific" - block.
 
 .. image:: ../../../../../figures/mapbender3_wms_application_settings.png
            :scale: 80
@@ -17,8 +17,8 @@ Layer-instances contain the options how a WMS is called: image-format, info-form
 Further information
 -------------------
 
-* You can find information about using layersets in the `Quickstart documentation <../../../../book/quickstart.html#configure-your-wms>`_.
+* You can find information about using layersets in the 'Instancesets </instancesets.html>'_ and the `Quickstart documentation <../../../../book/quickstart.html#configure-your-wms>`_.
 
 * The relevance of layersets for the display in the layertree is described in the Thematic Layers section of the `layertree documentation <../elements/layertree.html>`_
 
-* Likewise layersets can be switched on or off in the `Map element <../elements/map.html>`_.
+* Likewise, layersets can be switched on or off in the `Map element <../elements/map.html>`_.

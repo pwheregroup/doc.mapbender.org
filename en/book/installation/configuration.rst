@@ -128,6 +128,59 @@ Importing applications from mapbender.yml into a database occurs using the comma
     app/console doctrine:fixtures:load --fixtures=./mapbender/src/Mapbender/CoreBundle/DataFixtures/ORM/Application/ --append
 
 
+Starting a webserver
+^^^^^^^^^^^^^^^^^^^^
+
+Starting the webserver (usually listens on localhost:8000) is possible using the command:
+
+.. code-block:: yaml
+
+	app/console server:run
+
+This command blocks the command line. Stop the webserver using Ctrl+C.
+If you want to enable the server in the background, use this command instead:
+
+.. code-block:: yaml
+
+	app/console server:start
+
+
+Check the status
+^^^^^^^^^^^^^^^^
+
+As soon as the server runs in the background, it is possible to perform a status request on the command line using the command:
+
+.. code-block:: yaml
+
+	app/console server:status
+	
+
+Stopping the webserver
+^^^^^^^^^^^^^^^^^^^^^^
+
+If the webserver runs in the background, it is not possible to stop it with Crtl+C. Use the following command instead:
+
+.. code-block:: yaml
+
+	app/console server:stop
+	
+	
+For more specific information about the webserver, head to https://symfony.com/doc/2.3/cookbook/web_server/built_in.html.	
+
+Deleting the cache
+^^^^^^^^^^^^^^^^^^
+
+Especially in development or testing surroundings clearing the cache is a necessary tool from time to time. Use the following command to delete the cached files:
+
+.. code-block:: yaml
+
+	app/console cache:clear
+	
+However, it is also possible to use a simple remove-command on Mapbender3's caching directory:
+
+..code-block:: yaml
+
+	rm -rf app/cache/*
 
 
 
@@ -144,13 +197,13 @@ provided in the app/config/parameters.yml.dist file.
 parameters.yml
 ^^^^^^^^^^^^^^
 
-* database: The parameters starting with **database** are the database connection details. 
+* database: The parameters starting with **database** are the database connection details.
+ 
 * mailer: The mailer settings start with **mailer**. Use f.e. smtp or sendmail. 
-* locale: You can choose a locale for your application (default is en, de is available). Check http://doc.mapbender3.org/en/book/translation.html to find out how to modify translations or how to add a new language.
 
 **Notice:** You need a mailer for self-registration and reset password functionality.
 
-If you use a proxy you have to add the proxy settings to parameters.yml at section *OWSProxy Configuration*.
+* If you use a proxy you have to add the proxy settings to parameters.yml at section *OWSProxy Configuration*.
 
 This is how the configiration could look like:
 
@@ -168,6 +221,27 @@ This is how the configiration could look like:
         ows_proxy3_password: ~
         ows_proxy3_noproxy:
             - 192.168.1.123
+
+* locale: You can choose a locale for your application:
+
+* en: English (default),
+* de: German,
+* es: Spanish,
+* it: Italian,
+* nl: Dutch,
+* pt: Portuguese,
+* ru: Russian.
+
+Check http://doc.mapbender3.org/en/book/translation.html to find out how to modify translations or how to add a new language.
+
+* logo: If you want, you can add a custom logo instead of the default Mapbender3 one. You have to drop the image to bundles/mapbendercore/image/ and adjust the path "server_logo":
+.. code-block:: yaml
+
+   fom:
+        server_name:   Mapbender3
+        server_version: 3.0.7
+        server_logo:   bundles/mapbendercore/image/logo_mb3.png
+        
 
 config.yml
 ^^^^^^^^^^
