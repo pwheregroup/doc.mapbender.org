@@ -9,13 +9,13 @@ You can configure the WMS for your specific application. This is a useful step i
 
 #. Choose ``Applications -->`` |mapbender3-button-edit| ``edit-Button --> Layers --> edit-Button`` to edit the Service Instance.
 
-#. At the top of the interface, you can set general information about your Service. For further clarification, please look up the chapter `Service configuration`_.
+#. At the top of the interface, you can set general information about your Service. For further clarification, please look up the chapter Service configuration.
 
 #. Beneath, you will see a table with the layers of the Service. 
 
 #. Moreover, you can change the order of the layers quickly via drag & drop.
 
-.. image:: ../../figures/mapbender3_wms_application_settings.png
+.. image:: ../../../../../figures/mapbender3_wms_application_settings.png
   :scale: 80
 
 **Service configuration:**
@@ -47,7 +47,7 @@ also add hard coded values.
 The following example shows the definition of the parameter "group" which
 transfers the group-value of the logged-in user.
 
-.. image:: ../../figures/mapbender3_vendor_specific_parameter.png
+.. image:: ../../../../../figures/mapbender3_vendor_specific_parameter.png
            :scale: 80
       
 
