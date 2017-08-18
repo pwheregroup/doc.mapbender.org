@@ -173,7 +173,7 @@ Besonders in Entwicklungs-bzw. Testingumgebungen ist unter bestimmten Umständen
 	
 Alternativ können Sie alle Daten innerhalb des Mapbender3-Cacheverzeichnisses mithilfe des folgenden Befehls entfernen:
 
-..code-block:: yaml
+.. code-block:: yaml
 
 	rm -rf app/cache/*
 
