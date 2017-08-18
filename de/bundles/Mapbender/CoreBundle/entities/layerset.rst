@@ -18,7 +18,7 @@ Layerset-Instances enthalten die Optionen, wie ein WMS angesprochen werden kann:
 Weitere Informationen
 ---------------------
 
-* Information zur Benutzung der Layerset-Instances finden Sie auf der Seite 'Instancesets </instancesets.html>'_ und in der `Quickstart Dokumentation <../../../../book/quickstart.html#konfiguration-von-diensten>`_.
+* Information zur Benutzung der Layerset-Instances finden Sie unter `Instancesets <../entities/instancesets.html>`_ und in der `Quickstart Dokumentation <../../../../book/quickstart.html#konfiguration-von-diensten>`_.
 
 * Die Bedeutung der Layersets für die Anzeige im Layertree ist im Abschnitt zu den Thematischen Layern in der `Layertree-Dokumentation <../elements/layertree.html>`_ beschrieben.
 
