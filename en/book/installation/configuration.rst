@@ -178,11 +178,11 @@ Especially in development or testing surroundings, clearing the Symfony cache ca
 	
 However, it is also possible to use a remove-command on Mapbender3's caching directory. Note: Please only use the command if you are an experienced user, because it could cause a data loss of important files if not used correctly. 
 
-..code-block:: yaml
+.. code-block:: yaml
 
 	rm -rf app/cache/*
 
-For more specific information regarding the Symfony cache, please head to https://symfony.com/doc/current/console/usage.html
+For more specific information regarding the Symfony cache, please head to the Symfony documentation: https://symfony.com/doc/current/console/usage.html
 
 
 Configuration files
