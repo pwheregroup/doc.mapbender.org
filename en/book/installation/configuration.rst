@@ -145,8 +145,8 @@ If you want to enable the server in the background, use this command instead:
 	app/console server:start
 
 
-Check the status
-^^^^^^^^^^^^^^^^
+Checking the status
+^^^^^^^^^^^^^^^^^^^
 
 As soon as the server runs in the background, it is possible to perform a status request on the command line using the command:
 
@@ -170,19 +170,19 @@ For more specific information about the webserver, head to https://symfony.com/d
 Deleting the cache
 ^^^^^^^^^^^^^^^^^^
 
-Especially in development or testing surroundings clearing the cache is a necessary tool from time to time. Use the following command to delete the cached files:
+Especially in development or testing surroundings, clearing the Symfony cache can be a necessary tool. If you do so, please type in the following command to delete the Symfony cache:
 
 .. code-block:: yaml
 
 	app/console cache:clear
 	
-However, it is also possible to use a simple remove-command on Mapbender3's caching directory:
+However, it is also possible to use a remove-command on Mapbender3's caching directory. Note: Please only use the command if you are an experienced user, because it could cause a data loss of important files if not used correctly. 
 
 ..code-block:: yaml
 
 	rm -rf app/cache/*
 
-
+For more specific information regarding the Symfony cache, please head to https://symfony.com/doc/current/console/usage.html
 
 
 Configuration files
