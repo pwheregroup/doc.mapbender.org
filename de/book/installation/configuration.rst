@@ -160,24 +160,24 @@ Wenn der Webserver im Hintergrund läuft, können Sie ihn nicht über Strg+C sto
 
 	app/console server:stop
 
-Für tiefergreifende Informationen bezüglich des Webservers wird an dieser Stelle auf die Symfony-Dokumentationsseite verwiesen: https://symfony.com/doc/2.3/cookbook/web_server/built_in.html.
+Für tiefergreifende Informationen bezüglich des Webservers wird an dieser Stelle auf die Symfony-Dokumentationsseite verwiesen: https://symfony.com/doc/2.3/cookbook/web_server/built_in.html
 
 Löschen des Caches
 ^^^^^^^^^^^^^^^^^^
 
-Besonders in Entwicklungs-bzw. Testingumgebungen ist unter bestimmten Umständen ein Löschen des Caches notwendig. Dies können Sie über den folgenden Konsolenbefehl erreichen:
+Besonders in Entwicklungs-bzw. Testingumgebungen ist unter bestimmten Umständen ein Löschen des umgebungseigenen Symfony-Caches notwendig. Dies können Sie über den folgenden Konsolenbefehl erreichen:
 
 .. code-block:: yaml
 
 	app/console cache:clear
 	
-Alternativ können Sie alle Daten innerhalb des Mapbender3-Cacheverzeichnisses mithilfe des folgenden Befehls entfernen:
+Alternativ können Sie alle Daten innerhalb des Mapbender3-Cacheverzeichnisses mithilfe des folgenden Befehls entfernen. Sie sollten ihn jedoch nur benutzen, wenn sie sich absolut sicher über die Funktionsweise des Befehls sind, weil dieser unter Umständen einen erheblichen Datenverlust verursachen kann. Nicht-Entwicklern wird geraten, nur den obigen Befehl zu verwenden.
 
 .. code-block:: yaml
 
 	rm -rf app/cache/*
 
-
+Detailliertere Informationen bezüglich des Caches erhalten Sie auch hier unter der entsprechenden Symfony-Dokumentationsseite: https://symfony.com/doc/current/console/usage.html
 
 Konfigurationsdateien
 ---------------------
