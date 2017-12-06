@@ -239,40 +239,43 @@ You find the configuration and an example print-template in the Workshop/DemoBun
 
 There are some steps you have to follow:
 
-* 1. Create a print template that refers to the feature columns
-* 2. Define a featureType and refer to your new print template in your parameters.yml
-* 3. Call feature print from featureInfo
-* 4. Or call feature print from digitizer
+1. Create a print template that refers to the feature columns
+2. Define a featureType and refer to your new print template in your parameters.yml
+3. Call feature print from featureInfo
+4. Or call feature print from digitizer
 
 
 1. create a print template that refers to the feature columns
 ---------------------------------------------------------------
 
-Define textfields in your print template for every information you would like to print for the selected object. The textfield name has always the prefix feature. followed with name of the attribute (column) to export.
+Define textfields in your print template for every information you would like to print for the selected object. The textfield name has always the prefix *feature.* followed with the name of the attribute (column) to export.
 
 .. code-block:: yaml
 
   feature.name for column name of table poi
 
 
-2. define a featureType and refer to your new print template in your parameters.yml
+2. define a featureType and refer to your new print template in your config.yml
 ------------------------------------------------------------------------------------
 
 .. code-block:: yaml
 
-parameters:
-  featureTypes:
-    feature_demo:
-      connection: search_db   # Name of the database-connection from the config.yml
-      table: public.poi       # Table-name in which the FeatureTypes are stored
-      uniqueId: a_gid         # Column-name with the unique identifier
-      geomType: point         # Geometry-type
-      geomField: geom         # Column-name in which the geometry is stored
-      srid: 4326              # source EPSG-code of data
-      print:                  # print template to offer for feature data print
+ parameters:
+   featureTypes:
+     feature_demo:
+       connection: search_db   # Name of the database-connection from the config.yml
+       table: public.poi       # Table-name in which the FeatureTypes are stored
+       uniqueId: a_gid         # Column-name with the unique identifier
+       geomType: point         # Geometry-type
+       geomField: geom         # Column-name in which the geometry is stored
+       srid: 4326              # source EPSG-code of data
+       print:                  # print template to offer for feature data print
+         templates:
         templates:
-          - template: a4_landscape_with_feature_information
-            label: Demo with feature information print
+          - template: a4_portrait_official_feature_data_demo
+            label: Demo with feature information print (portrait)
+          - template: a4_landscape_official_feature_data_demo
+            label: Demo with feature information print (landscape)
 
 
 3. Call feature print from featureInfo
@@ -295,7 +298,7 @@ The following code is an example for a MapServer information template.
  </tr>
  </table>
 
-The featureInfo will open a dialog with a link *print feature information*. When you click on the link the print dialog is opened and offers the print templates that are defined for the feature type.
+The featureInfo will open a dialog with a link *print feature information*. When you click on the link the print dialog is opens and offers the print templates that are defined for the feature type.
 
 You can choose the desired region and create a print pdf. The pdf will contain the information for the selected feature. 
 
@@ -305,17 +308,17 @@ You can choose the desired region and create a print pdf. The pdf will contain t
 
 You also can integrate the functionality to the digitizer. It will offer a new button *print* in every feature information dialog.
 
-To activate the functionality you have to add the follwing parameter to your digitizer configuration.
+To activate the functionality you have to add the following parameter to your digitizer configuration.
 
 .. code-block:: yaml
     
     printable: true
 
-When you click on the print button the print dialog is opened and offers the print templates that are defined for the feature type.
+When you click on the print button the print dialog is opens and offers the print templates that are defined for the feature type.
 
-You can choose the desired region and create a print pdf. The pdf will contain the information for the selected feature. 
+Again you can choose the desired region and create a print pdf. The pdf will contain the information for the selected feature. 
 
-Note: The flexibility to move the print frame won't stop you from choosing a region that does not contain the feature that was selected.
+Note: The flexibility to move the print frame wont stop you from choosing a region that does not contain the feature that was selected. In this case the feature information does not match to the features that are displayed.
 
 
 Configuration of the element
