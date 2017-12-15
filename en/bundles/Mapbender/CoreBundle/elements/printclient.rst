@@ -293,7 +293,7 @@ The following code is an example for a MapServer information template.
  <script src="http://code.jquery.com/jquery-latest.js"></script>
  <tr>
  <td class="th_quer">Drucken</td>
- <td><a href="" onclick="parent.$('.mb-element-printclient:parent').data('mapbenderMbPrintClient').printDigitizerFeature('feature_demo',[gid]); return false">print feature information</a>
+ <td><a href="" onclick="parent.$('.mb-element-map').data('mapQuery').olMap.setCenter([[x],[y]]);parent.$('.mb-element-printclient:parent').data('mapbenderMbPrintClient').printDigitizerFeature('feature_demo',[gid]);parent.$('.mb-element-featureinfo:parent').data('mapbenderMbFeatureInfo').deactivate();return false">print feature information</a>
  </td>
  </tr>
  </table>
