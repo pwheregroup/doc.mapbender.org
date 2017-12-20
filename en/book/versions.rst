@@ -4,10 +4,18 @@ Version history
 `German Version of this document. <../../de/book/versions.html>`_
 
 You find the milestones at: https://github.com/mapbender/mapbender/milestones
+  
 
 
-Version next
-------------
+
+* Verbesserung im FOM: Wrong Type Definition in ACL Provider Constructor #641
+* [FOM] Using SSPI in MB3.0.6 results in wrong argument exception 
+
+
+
+
+Version 3.0.6.4
+---------------
 
 Release date: TT.MM.JJJJ
 
