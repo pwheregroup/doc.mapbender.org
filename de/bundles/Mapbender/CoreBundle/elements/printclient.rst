@@ -229,7 +229,7 @@ Es können Informationen zu einem Objekt ausgedruckt werden. Ein Objekt kann üb
 
 Der feature_type-name und die selektierte object-id wird an den Druck weitergeleitet. Dadurch erhält Mapbender alle Informationen, um zu selektierten Objekt die Sachdaten zu ermitteln und in Feldern im Drucktemplate auszugeben. Im Drucktemplate wurde festgelegt, welche Daten ausgegeben werden sollen.
 
-Im Folgenden wird beschrieben, wie dieses Verhalten konfiguriert werden kann. Die Dokumentation bezieht auf die poi Tabelle, die im digitizer-Beispiel verwendet wird.
+Im Folgenden wird beschrieben, wie dieses Verhalten konfiguriert werden kann. Die Dokumentation bezieht sich auf die poi Tabelle, die im digitizer-Beispiel verwendet wird.
 
 Sie finden die Konfiguration und ein Beispiel-Drucktemplate im  Workshop/DemoBundle unter https://github.com/mapbender/mapbender-workshop 
 
@@ -260,7 +260,7 @@ Definieren Sie im Drucktemplate ein Textfeld für die Informationen, die Sie fü
    featureTypes:
      feature_demo:
        connection: search_db   # Name der Datenbankverbindung von der config.yml
-       table: public.poi       # Tabellenname, in der sich die Objekte befindet
+       table: public.poi       # Tabellenname, in der sich die Objekte befinden
        uniqueId: a_gid         # Spaltennname mit der eindeutigen ID
        geomType: point         # Geometrietyp
        geomField: geom         # Spaltenname, in der die Geometrie gespeichert ist
@@ -279,7 +279,7 @@ Definieren Sie im Drucktemplate ein Textfeld für die Informationen, die Sie fü
 
 Bemerkung: Die Informationsabfrage (Feature Info) ist die Ausgabe von Informationen von einem OGC WMS Service. Es gibt Informationen zu Objekten an einer Kickposition aus.
 
-Wenn Sie einem WMS konfigurieren, generieren Sie einen Link mit der folgenden Referenz, die den Druck mit Objektinformationen anstößt.
+Wenn Sie einen WMS konfigurieren, generieren Sie einen Link mit der folgenden Referenz, die den Druck mit Objektinformationen anstößt.
 
 Der folgende Code ist ein Beispiel für ein MapServer FeatureInfo-Template.
 
@@ -294,9 +294,9 @@ Der folgende Code ist ein Beispiel für ein MapServer FeatureInfo-Template.
  </tr>
  </table>
 
-Die Informationsabfrage (FeatureInfo) öffnet einen Dialog mit dem Link *print feature information*.  Wenn Sie auf den Link klicken, öffnet sich ein Druckdialog, der das Drucktemplate für das selektierte Objekt anbietet.
+Die Informationsabfrage (FeatureInfo) öffnet einen Dialog mit dem Link *print feature information*. Wenn Sie auf den Link klicken, öffnet sich ein Druckdialog, der das Drucktemplate für das selektierte Objekt anbietet.
 
-Sie können das gewünschte Gebiet auswählen und ein print.pdf erzeugen. Das pdf beinhaltet die Informationen für das selektierte Objekt.
+Sie können das gewünschte Gebiet auswählen und ein PDF erzeugen. Das PDF beinhaltet die Informationen für das selektierte Objekt.
 
 4. Oder Aufruf des Drucks über die Digitalisierung
 ------------------------------------------
