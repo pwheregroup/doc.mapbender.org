@@ -233,7 +233,7 @@ Im Folgenden wird beschrieben, wie dieses Verhalten konfiguriert werden kann. Di
 
 Sie finden die Konfiguration und ein Beispiel-Drucktemplate im  Workshop/DemoBundle unter https://github.com/mapbender/mapbender-workshop 
 
-Die folgenden Schritte sind notwendig/ müssen durchgeführt werden:
+Die folgenden Schritte sind müssen durchgeführt werden:
 
 1. Erzeugen Sie ein Drucktemplate, das auf die Objektspalten verweist
 2. Definieren Sie einen featureType und verweisen Sie auf das neue Drucktemplate in Ihrer parameters.yml
