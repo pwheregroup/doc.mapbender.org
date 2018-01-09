@@ -298,7 +298,7 @@ The following code is an example for a MapServer information template.
  </tr>
  </table>
 
-The featureInfo will open a dialog with a link *print feature information*. When you click on the link the print dialog is opens and offers the print templates that are defined for the feature type.
+The featureInfo will open a dialog with a link *print feature information*. When you click on the link the print dialog opens and offers the print templates that are defined for the feature type.
 
 You can choose the desired region and create a print pdf. The pdf will contain the information for the selected feature. 
 
