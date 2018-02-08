@@ -3,7 +3,13 @@
 # fom
 # owsproxy
 build
-_sources
 .doctrees
 .tox
 .projectile
+
+# env
+.idea/
+
+# project
+_exts/
+_sources/
