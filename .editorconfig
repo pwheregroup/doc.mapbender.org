@@ -8,6 +8,14 @@ indent_style = space
 trim_trailing_whitespace = false
 insert_final_newline = true
 
+[*.py]
+charset = utf-8
+indent_style = space
+indent_size = 4
+trim_trailing_whitespace = true
+insert_final_newline = true
+end_of_line = lf
+
 [.gitignore]
 indent_size = 0
 indent_style = space
